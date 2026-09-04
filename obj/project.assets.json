@@ -8,19 +8,19 @@
     "net8.0-windows": []
   },
   "packageFolders": {
-    "C:\\Users\\Bijay\\.nuget\\packages\\": {}
+    "C:\\Users\\anjal\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\Bijay\\Downloads\\Allikk_Aabharanam-master\\DesktopKeychainApp.csproj",
+      "projectUniqueName": "C:\\Users\\anjal\\OneDrive\\Documents\\Allikk_Aabharanam-clean\\DesktopKeychainApp.csproj",
       "projectName": "DesktopKeychainApp",
-      "projectPath": "D:\\Users\\Bijay\\Downloads\\Allikk_Aabharanam-master\\DesktopKeychainApp.csproj",
-      "packagesPath": "C:\\Users\\Bijay\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\Bijay\\Downloads\\Allikk_Aabharanam-master\\obj\\",
+      "projectPath": "C:\\Users\\anjal\\OneDrive\\Documents\\Allikk_Aabharanam-clean\\DesktopKeychainApp.csproj",
+      "packagesPath": "C:\\Users\\anjal\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\anjal\\OneDrive\\Documents\\Allikk_Aabharanam-clean\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Bijay\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\anjal\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0-windows"

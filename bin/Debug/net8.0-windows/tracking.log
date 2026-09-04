@@ -41212,3 +41212,587 @@
 2026-09-05T01:14:03.8751478+05:30 CYCLE name='Recycle Bin' oldBounds=570,413,94,67 newBounds=570,413,94,67 boundsChanged=False
 2026-09-05T01:14:03.9850630+05:30 DIRECT_POSITION name='Recycle Bin' bounds=570,413,94,67
 2026-09-05T01:14:03.9855042+05:30 CYCLE name='Recycle Bin' oldBounds=570,413,94,67 newBounds=570,413,94,67 boundsChanged=False
+2026-09-05T03:20:19.4806186+05:30 ATTACH name='Docker Desktop' originalRuntimeId=42,65774,4,17 originalBounds=95,885,94,87
+2026-09-05T03:20:19.4886446+05:30 TRACKING_STARTED thread=5 apartment=STA
+2026-09-05T03:20:19.4927300+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:19.4937980+05:30 CYCLE name='Docker Desktop' oldBounds=<none> newBounds=95,885,94,87 boundsChanged=True
+2026-09-05T03:20:19.4947323+05:30 REPOSITION name='Docker Desktop' calculatedOverlay=(105,895) overlayCall=True nativeResult=True
+2026-09-05T03:20:19.6025698+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:19.6035392+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:19.7102284+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:19.7112263+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:19.8196006+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:19.8205243+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:19.9289349+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:19.9298159+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:20.0381400+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:20.0391940+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:20.1499417+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:20.1506813+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:20.2592282+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:20.2599806+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:20.3706722+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:20.3722212+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:20.4799525+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:20.4806973+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:20.5908525+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:20.5917236+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:20.7160812+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:20.7169214+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:20.8406438+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:20.8417664+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:20.9675887+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:20.9682263+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:21.0774040+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:21.0780714+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:21.1885348+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:21.1893061+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:21.2986743+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:21.2993256+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:21.4079051+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:21.4086711+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:21.5173783+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:21.5179294+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:21.6280666+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:21.6286145+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:21.7395897+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:21.7402633+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:21.8480585+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:21.8487623+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:21.9574495+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:21.9582018+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:22.0675866+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:22.0683328+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:22.1774241+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:22.1780612+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:22.2865674+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:22.2871931+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:22.3963932+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:22.3970062+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:22.5033463+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:22.5040149+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:22.6119180+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:22.6124252+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:22.7203952+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:22.7220902+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:22.8303596+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:22.8310602+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:22.9418226+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:22.9423345+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:23.0514570+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:23.0522728+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:23.1613209+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:23.1628992+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:23.2705014+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:23.2711661+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:23.3770182+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:23.3775692+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:23.4853565+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:23.4859554+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:23.5938312+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:23.5955921+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:23.7033711+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:23.7039319+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:23.8126810+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:23.8135457+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:23.9230473+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:23.9239187+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:24.0345652+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:24.0351011+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:24.1426086+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:24.1431414+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:24.2512643+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:24.2518363+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:24.3602665+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:24.3608231+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:24.4694698+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:24.4706483+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:24.5790929+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:24.5797244+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:24.6895553+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:24.6907410+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:24.7980369+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:24.7989997+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:24.9057186+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:24.9063185+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:25.0158736+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:25.0179845+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:25.1248447+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:25.1255456+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:25.2351713+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:25.2359073+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:25.3467798+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:25.3473084+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:25.4557663+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:25.4562414+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:25.5645686+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:25.5657962+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:25.6727071+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:25.6733822+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:25.7829278+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:25.7849966+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:25.8929349+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:25.8939242+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:26.0008968+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:26.0014824+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:26.1094860+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:26.1110760+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:26.2180808+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:26.2204152+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:26.3302979+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:26.3310214+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:26.4390155+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:26.4398477+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:26.5474798+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:26.5480532+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:26.6557530+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:26.6574560+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:26.7676571+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:26.7696569+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:26.8756228+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:26.8786755+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:26.9854470+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:26.9861240+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:27.0949703+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:27.0966060+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:27.2071149+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:27.2087262+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:27.3156607+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:27.3171319+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:27.4284355+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:27.4295473+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:27.5335118+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:27.5342923+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:27.6426143+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:27.6451833+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:27.7514254+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:27.7525494+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:27.8611626+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:27.8637570+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:27.9705893+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:27.9713886+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:28.0777858+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:28.0784040+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:28.1872038+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:28.1889716+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:28.2954916+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:28.2966327+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:28.4199594+05:30 DIRECT_POSITION name='Docker Desktop' bounds=95,885,94,87
+2026-09-05T03:20:28.4215400+05:30 CYCLE name='Docker Desktop' oldBounds=95,885,94,87 newBounds=95,885,94,87 boundsChanged=False
+2026-09-05T03:20:28.7368430+05:30 ATTACH name='Brave' originalRuntimeId=42,65774,4,6 originalBounds=0,665,94,67
+2026-09-05T03:20:28.7378881+05:30 TRACKING_STARTED thread=6 apartment=STA
+2026-09-05T03:20:28.7388928+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:28.7397272+05:30 CYCLE name='Brave' oldBounds=<none> newBounds=0,665,94,67 boundsChanged=True
+2026-09-05T03:20:28.7413483+05:30 REPOSITION name='Brave' calculatedOverlay=(10,675) overlayCall=True nativeResult=True
+2026-09-05T03:20:28.8572171+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:28.8577812+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:28.9680586+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:28.9688664+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:29.0776472+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:29.0781230+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:29.2017123+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:29.2037851+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:29.3260372+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:29.3280012+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:29.4504751+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:29.4510607+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:29.5638645+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:29.5648743+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:29.6856423+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:29.6861725+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:29.8104341+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:29.8121247+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:29.9351091+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:29.9368661+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:30.0575909+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:30.0593719+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:30.1827614+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:30.1837134+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:30.2930924+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:30.2939419+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:30.4177256+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:30.4185100+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:30.5245293+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:30.5254803+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:30.6342687+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:30.6360803+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:30.7393389+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:30.7403781+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:30.8480138+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:30.8493527+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:30.9553922+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:30.9565842+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:31.0659767+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:31.0677725+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:31.1742309+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:31.1753642+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:31.2848986+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:31.2856215+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:31.3959728+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:31.3979475+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:31.5032460+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:31.5048091+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:31.6127430+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:31.6134037+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:31.7222605+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:31.7240307+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:31.8298082+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:31.8305706+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:31.9400906+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:31.9408610+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:32.0478732+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:32.0485612+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:32.1564330+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:32.1580345+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:32.2660132+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:32.2700832+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:32.3753540+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:32.3765175+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:32.4834680+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:32.4839472+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:32.6054670+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:32.6067467+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:32.7176449+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:32.7183025+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:32.8273456+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:32.8279459+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:32.9365342+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:32.9379177+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:33.0459528+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:33.0474282+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:33.1702536+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:33.1719258+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:33.2941461+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:33.2954656+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:33.4184416+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:33.4215604+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:33.5441890+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:33.5447509+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:33.6502078+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:33.6513930+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:33.7585200+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:33.7592207+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:33.8690306+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:33.8700215+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:33.9786684+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:33.9792676+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:34.0873626+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:34.0888845+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:34.1982468+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:34.2001237+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:34.3227659+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:34.3249433+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:34.4335509+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:34.4357771+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:34.5571049+05:30 DIRECT_POSITION name='Brave' bounds=0,665,94,67
+2026-09-05T03:20:34.5581828+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:34.6665923+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:34.7745745+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=0,665,94,67 boundsChanged=False
+2026-09-05T03:20:34.8823336+05:30 CYCLE name='Brave' oldBounds=0,665,94,67 newBounds=27,622,94,67 boundsChanged=True
+2026-09-05T03:20:34.8843163+05:30 REPOSITION name='Brave' calculatedOverlay=(37,632) overlayCall=True nativeResult=True
+2026-09-05T03:20:34.9912957+05:30 CYCLE name='Brave' oldBounds=27,622,94,67 newBounds=124,528,94,67 boundsChanged=True
+2026-09-05T03:20:34.9929347+05:30 REPOSITION name='Brave' calculatedOverlay=(134,538) overlayCall=True nativeResult=True
+2026-09-05T03:20:35.1019006+05:30 CYCLE name='Brave' oldBounds=124,528,94,67 newBounds=215,410,94,67 boundsChanged=True
+2026-09-05T03:20:35.1034530+05:30 REPOSITION name='Brave' calculatedOverlay=(225,420) overlayCall=True nativeResult=True
+2026-09-05T03:20:35.2087088+05:30 CYCLE name='Brave' oldBounds=215,410,94,67 newBounds=238,326,94,67 boundsChanged=True
+2026-09-05T03:20:35.2104313+05:30 REPOSITION name='Brave' calculatedOverlay=(248,336) overlayCall=True nativeResult=True
+2026-09-05T03:20:35.3166035+05:30 CYCLE name='Brave' oldBounds=238,326,94,67 newBounds=237,289,94,67 boundsChanged=True
+2026-09-05T03:20:35.3192567+05:30 REPOSITION name='Brave' calculatedOverlay=(247,299) overlayCall=True nativeResult=True
+2026-09-05T03:20:35.4242543+05:30 CYCLE name='Brave' oldBounds=237,289,94,67 newBounds=206,267,94,67 boundsChanged=True
+2026-09-05T03:20:35.4257420+05:30 REPOSITION name='Brave' calculatedOverlay=(216,277) overlayCall=True nativeResult=True
+2026-09-05T03:20:35.5310194+05:30 CYCLE name='Brave' oldBounds=206,267,94,67 newBounds=195,257,94,67 boundsChanged=True
+2026-09-05T03:20:35.5350135+05:30 REPOSITION name='Brave' calculatedOverlay=(205,267) overlayCall=True nativeResult=True
+2026-09-05T03:20:35.6394679+05:30 CYCLE name='Brave' oldBounds=195,257,94,67 newBounds=191,252,94,67 boundsChanged=True
+2026-09-05T03:20:35.6412973+05:30 REPOSITION name='Brave' calculatedOverlay=(201,262) overlayCall=True nativeResult=True
+2026-09-05T03:20:35.7489106+05:30 CYCLE name='Brave' oldBounds=191,252,94,67 newBounds=189,247,94,67 boundsChanged=True
+2026-09-05T03:20:35.7525777+05:30 REPOSITION name='Brave' calculatedOverlay=(199,257) overlayCall=True nativeResult=True
+2026-09-05T03:20:35.8909329+05:30 FRESH_REACQUIRED name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:35.8945026+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:35.8950861+05:30 CYCLE name='Brave' oldBounds=189,247,94,67 newBounds=190,225,94,67 boundsChanged=True
+2026-09-05T03:20:35.8963076+05:30 REPOSITION name='Brave' calculatedOverlay=(200,235) overlayCall=True nativeResult=True
+2026-09-05T03:20:35.9981023+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:35.9989017+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:36.1220727+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:36.1227359+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:36.2466495+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:36.2485469+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:36.3692711+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:36.3707666+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:36.4783334+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:36.4789367+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:36.5869679+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:36.5886464+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:36.6957135+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:36.6965917+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:36.8066097+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:36.8071835+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:36.9155521+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:36.9162289+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:37.0241286+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:37.0252060+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:37.1307063+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:37.1319901+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:37.2397370+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:37.2403347+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:37.3538346+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:37.3561714+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:37.4742947+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:37.4752008+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:37.5832906+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:37.5840094+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:37.6898834+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:37.6904319+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:37.8010908+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:37.8018812+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:37.9099734+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:37.9113293+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:38.0182641+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:38.0190516+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:38.1279356+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:38.1298495+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:38.2365695+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:38.2372617+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:38.3453570+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:38.3464543+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:38.4537013+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:38.4555827+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:38.5632640+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:38.5639301+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:38.6716090+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:38.6734169+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:38.7818742+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:38.7825737+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:38.8916375+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:38.8922141+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:39.0033271+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:39.0042409+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:39.1155683+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:39.1166811+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:39.2244260+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:39.2254543+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:39.3326783+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:39.3341046+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:39.4421859+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:39.4439554+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:39.5518816+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:39.5537145+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:39.6607205+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:39.6619891+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:39.7696825+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:39.7706436+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:39.8771127+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:39.8775986+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:39.9840700+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:39.9849742+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:40.0930373+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:40.0941980+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:40.2013837+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:40.2019581+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:40.3257427+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:40.3270103+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:40.4497731+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:40.4514781+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:40.5709457+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:40.5715608+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:40.6809193+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:40.6827128+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:40.7904241+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:40.7918192+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:40.8986343+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:40.8991740+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:41.0094537+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:41.0107960+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:41.1183558+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:41.1189410+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:41.2274956+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:41.2282597+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:41.3380710+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:41.3587098+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:41.4775697+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:41.4785389+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:41.5870806+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:41.5885390+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:41.6943386+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:41.6952004+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:41.8027322+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:41.8048456+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:41.9128831+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:41.9140555+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:42.0226848+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:42.0244633+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:42.1323460+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:42.1329721+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:42.2416673+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:42.2430299+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:42.3506251+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:42.3515750+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:42.4601497+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:42.4606531+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:42.5681810+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:42.5690462+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:42.6778661+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:42.6805280+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:42.7886359+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:42.7891474+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:42.8977916+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:42.8982608+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:43.0197599+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:43.0209622+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:43.1337369+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:43.1688530+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:43.2744308+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:43.2752502+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:43.3826730+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:43.3839528+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:43.4926750+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:43.4937911+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:43.5999449+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:43.6010309+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:43.7066397+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:43.7079018+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:43.8151900+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:43.8168245+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:43.9247852+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:43.9261081+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:44.0354546+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:44.0368563+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:44.1438570+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:44.1447698+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:44.2532619+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:44.2550199+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:44.3631126+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:44.3654402+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:44.4741468+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:44.4762076+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:44.5816312+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:44.5827270+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:44.6893054+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:44.6899561+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:44.7990362+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:44.7996264+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:44.9116263+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:44.9131846+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:45.0177108+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:45.0183424+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:45.1255526+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:45.1267180+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:45.2339866+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:45.2346615+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:45.3433870+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:45.3446665+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:45.4526212+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:45.4544669+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:45.5616301+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:45.5634024+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:45.6824478+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:45.6831934+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:45.7952011+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:45.7960259+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:45.9047574+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:45.9069069+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:46.0280708+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:46.0291376+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:46.1526016+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:46.1543198+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:46.2764444+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:46.2772185+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:46.3871084+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:46.3883008+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:46.5125802+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:46.5142242+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:46.6380969+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:46.6387089+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:46.7632698+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:46.7646160+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:46.8847299+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:46.8853232+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:46.9973189+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:46.9983121+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:47.1207057+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:47.1218009+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:47.2272468+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:47.2278837+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:47.3363782+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:47.3370657+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:47.4466469+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:47.4477687+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:47.5585535+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:47.5596588+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:47.6644645+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:47.6651414+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:47.7751773+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:47.7759764+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:47.8825557+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:47.8833088+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:47.9910778+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:47.9922575+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:48.1011862+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:48.1030241+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:48.2104096+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:48.2113688+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:48.3193043+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:48.3198571+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:48.4283761+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:48.4290679+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:48.5371933+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:48.5382415+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:48.6459830+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:48.6479459+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:48.7537115+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:48.7547456+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:48.8627584+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:48.8644805+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:48.9728451+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:48.9735636+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:49.0816987+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:49.0838256+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:49.1906045+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:49.1922535+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:49.2981963+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:49.2989871+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:49.4084301+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:49.4105552+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:49.5156857+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:49.5379284+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:49.6402107+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:49.6420341+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:49.7489057+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:49.7502687+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:49.8721596+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:49.8727847+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:49.9863327+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:49.9872949+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:50.1066616+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:50.1074702+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:50.2305820+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:50.2312488+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:50.3413589+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:50.3421644+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:50.4663394+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:50.4682306+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:50.5913593+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:50.5919655+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:50.7005261+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:50.7022461+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:50.8249158+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:50.8273543+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:50.9492889+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:50.9504199+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:51.0577652+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:51.0592437+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:51.2225858+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:51.2235545+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:51.3417535+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:51.3425871+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:51.4586970+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:51.4598395+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:51.5615721+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:51.5628447+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:51.6712454+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:51.6719067+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:51.7946057+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:51.7961182+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:51.9186345+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:51.9197891+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
+2026-09-05T03:20:52.0433391+05:30 DIRECT_POSITION name='Brave' bounds=190,225,94,67
+2026-09-05T03:20:52.0454149+05:30 CYCLE name='Brave' oldBounds=190,225,94,67 newBounds=190,225,94,67 boundsChanged=False
