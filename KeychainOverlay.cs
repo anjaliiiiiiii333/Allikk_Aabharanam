@@ -32,7 +32,7 @@ namespace DesktopKeychainApp
 
         public event EventHandler Disposed;
 
-        public KeychainOverlay(Bitmap keychainBitmap, int offsetX = 0, int offsetY = 0)
+        public KeychainOverlay(Bitmap keychainBitmap, int offsetX = 10, int offsetY = 10)
         {
             _keychainBitmap = keychainBitmap ?? throw new ArgumentNullException(nameof(keychainBitmap));
             _offsetX = offsetX;
@@ -41,6 +41,14 @@ namespace DesktopKeychainApp
             CreateOverlayWindow();
         }
 
+        /// <summary>
+        /// Creates the transparent overlay window using Win32 APIs.
+        /// The window is created with:
+        /// - WS_EX_LAYERED: Enables alpha blending
+        /// - WS_EX_TRANSPARENT: Makes the window click-through
+        /// - WS_EX_TOPMOST: Ensures it's always on top of the desktop
+        /// - WS_EX_NOACTIVATE: Prevents the window from receiving focus
+        /// </summary>
         private void CreateOverlayWindow()
         {
             try
@@ -64,7 +72,7 @@ namespace DesktopKeychainApp
                 int exStyle = Win32Interop.WS_EX_TRANSPARENT | Win32Interop.WS_EX_LAYERED |
                               Win32Interop.WS_EX_NOACTIVATE;
 
-                // Create foreground overlay window in front of the desktop icon
+                // Create the window with initial position and size matching the keychain bitmap
                 _overlayHandle = Win32Interop.CreateWindowEx(
                     exStyle,
                     "STATIC",
@@ -82,7 +90,10 @@ namespace DesktopKeychainApp
                     throw new InvalidOperationException("Failed to create overlay window: " + Marshal.GetLastWin32Error());
                 }
 
-                UpdateLayeredImage(_overlayHandle, _keychainBitmap);
+                // Set up layered window with the keychain image
+                UpdateOverlayImage();
+
+                // Show the window
                 NativeShowWindow(_overlayHandle, 4); // SW_SHOW
             }
             catch (Exception ex)
@@ -92,40 +103,48 @@ namespace DesktopKeychainApp
             }
         }
 
-        private static void UpdateLayeredImage(IntPtr handle, Bitmap bitmap)
+        /// <summary>
+        /// Updates the overlay image and position.
+        /// Called whenever the desktop item moves or the overlay needs to be refreshed.
+        /// </summary>
+        private void UpdateOverlayImage()
         {
-            if (handle == IntPtr.Zero || bitmap == null)
+            if (_overlayHandle == IntPtr.Zero || _keychainBitmap == null)
                 return;
 
             try
             {
+                // Create a device context for the overlay
                 IntPtr hdcDest = IntPtr.Zero;
                 IntPtr hdcSrc = Win32Interop.CreateCompatibleDC(hdcDest);
 
+                // Create a DIB section that holds the bitmap with alpha channel
                 var bmpInfo = new Win32Interop.BITMAPINFO();
                 bmpInfo.bmiHeader.biSize = (uint)Marshal.SizeOf(typeof(Win32Interop.BITMAPINFOHEADER));
-                bmpInfo.bmiHeader.biWidth = bitmap.Width;
-                bmpInfo.bmiHeader.biHeight = -bitmap.Height;
+                bmpInfo.bmiHeader.biWidth = _keychainBitmap.Width;
+                bmpInfo.bmiHeader.biHeight = -_keychainBitmap.Height; // Negative for top-down DIB
                 bmpInfo.bmiHeader.biPlanes = 1;
                 bmpInfo.bmiHeader.biBitCount = 32;
-                bmpInfo.bmiHeader.biCompression = 0;
+                bmpInfo.bmiHeader.biCompression = 0; // BI_RGB
 
                 IntPtr ppvBits;
+                IntPtr hdcMem = IntPtr.Zero;
                 IntPtr hBitmap = Win32Interop.CreateDIBSection(hdcDest, ref bmpInfo, 0, out ppvBits, IntPtr.Zero, 0);
 
                 if (hBitmap == IntPtr.Zero)
                 {
-                    hBitmap = bitmap.GetHbitmap(System.Drawing.Color.Transparent);
+                    // Fallback: use standard bitmap approach
+                    hBitmap = _keychainBitmap.GetHbitmap(System.Drawing.Color.Transparent);
                 }
                 else
                 {
                     using (Bitmap sourceBitmap = new Bitmap(
-                        bitmap.Width,
-                        bitmap.Height,
+                        _keychainBitmap.Width,
+                        _keychainBitmap.Height,
                         PixelFormat.Format32bppPArgb))
                     using (Graphics graphics = Graphics.FromImage(sourceBitmap))
                     {
-                        graphics.DrawImageUnscaled(bitmap, 0, 0);
+                        graphics.DrawImageUnscaled(_keychainBitmap, 0, 0);
                         BitmapData bitmapData = sourceBitmap.LockBits(
                             new Rectangle(0, 0, sourceBitmap.Width, sourceBitmap.Height),
                             ImageLockMode.ReadOnly,
@@ -157,15 +176,20 @@ namespace DesktopKeychainApp
 
                 IntPtr hOld = Win32Interop.SelectObject(hdcSrc, hBitmap);
 
+                // Position and size for UpdateLayeredWindow
                 var ptDst = new Win32Interop.POINT { X = 0, Y = 0 };
                 var ptSrc = new Win32Interop.POINT { X = 0, Y = 0 };
-                var size = new Win32Interop.SIZE { cx = bitmap.Width, cy = bitmap.Height };
+                var size = new Win32Interop.SIZE { cx = _keychainBitmap.Width, cy = _keychainBitmap.Height };
+
+                // Blend function with full opacity
                 var blend = new Win32Interop.BLENDFUNCTION(255);
 
+                // Update the layered window with the bitmap
                 bool success = Win32Interop.UpdateLayeredWindow(
-                    handle, hdcDest, ref ptDst, ref size, hdcSrc, ref ptSrc, 0, ref blend,
+                    _overlayHandle, hdcDest, ref ptDst, ref size, hdcSrc, ref ptSrc, 0, ref blend,
                     Win32Interop.LWA_ALPHA);
 
+                // Cleanup
                 Win32Interop.SelectObject(hdcSrc, hOld);
                 Win32Interop.DeleteObject(hBitmap);
                 Win32Interop.DeleteDC(hdcSrc);
@@ -181,17 +205,22 @@ namespace DesktopKeychainApp
             }
         }
 
+        /// <summary>
+        /// Repositions the overlay to follow the desktop item.
+        /// Called whenever the desktop item moves or when tracking the item's position.
+        /// </summary>
         public bool SetPosition(double itemX, double itemY, double itemWidth, double itemHeight)
         {
             if (_disposed || _overlayHandle == IntPtr.Zero)
-                return false;
+            return false;
 
             try
             {
+                // The bitmap contains the icon-sized casing at its origin and the
+                // accessory immediately outside the right edge, so anchor its origin
+                // to the tracked icon's top-left corner.
                 int overlayX = (int)(itemX + _offsetX);
                 int overlayY = (int)(itemY + _offsetY);
-
-                // Update foreground overlay position (in front of the desktop icon)
                 bool repositioned = Win32Interop.SetWindowPos(
                     _overlayHandle,
                     IntPtr.Zero,
@@ -220,6 +249,10 @@ namespace DesktopKeychainApp
 
         public bool LastRepositionSucceeded => _lastRepositionSucceeded;
 
+        /// <summary>
+        /// Checks if the overlay window still exists and is valid.
+        /// Used to detect if the window was closed externally.
+        /// </summary>
         public bool IsValid
         {
             get

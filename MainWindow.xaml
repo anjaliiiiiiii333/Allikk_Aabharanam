@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Desktop Keychain Accessory" Height="500" Width="600"
         WindowStartupLocation="CenterScreen"
-        Background="White"
+        Background="#F0F0F0"
         Closing="Window_Closing">
     <Grid>
         <StackPanel Margin="20" VerticalAlignment="Stretch">
