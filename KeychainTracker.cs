@@ -24,6 +24,10 @@ namespace DesktopKeychainApp
         private Thread _trackingThread;
         private bool _disposed;
         private Rect? _lastPosition;
+        private bool _wasLeftButtonDown;
+        private bool _isDragging;
+        private double _dragOffsetX;
+        private double _dragOffsetY;
         private readonly int[] _trackedRuntimeId;
         private static readonly object LogLock = new object();
         private static readonly string LogPath = Path.Combine(
@@ -108,8 +112,14 @@ namespace DesktopKeychainApp
                         break;
                     }
 
-                    // Re-enumerate the desktop so a recreated or moved ListItem is not stale.
-                    Rect? position = GetCurrentPosition();
+                    bool leftButtonDown = IsLeftButtonDown();
+                    UpdateDragState(leftButtonDown);
+
+                    // Windows does not update UI Automation bounds while a shell drag is active.
+                    Rect? position = _isDragging
+                        ? GetDraggedPosition()
+                        : GetCurrentPosition();
+                    _wasLeftButtonDown = leftButtonDown;
 
                     if (position.HasValue)
                     {
@@ -167,6 +177,15 @@ namespace DesktopKeychainApp
 
         private Rect? GetCurrentPosition()
         {
+            // Keep tracking the original automation element when desktop enumeration is temporarily empty.
+            Rect? directPosition = _detector.GetDesktopItemPosition(_trackedItem);
+            if (directPosition.HasValue)
+            {
+                _trackedItem.BoundingRectangle = directPosition.Value;
+                Log($"DIRECT_POSITION name='{_trackedItem.Name}' bounds={directPosition.Value}");
+                return directPosition;
+            }
+
             List<DesktopItem> currentItems = _detector.GetDesktopItems();
             DesktopItem currentItem = null;
             Log($"QUERY name='{_trackedItem.Name}' itemCount={currentItems.Count} originalRuntimeId={FormatRuntimeId(_trackedRuntimeId)}");
@@ -217,6 +236,50 @@ namespace DesktopKeychainApp
             _trackedItem.BoundingRectangle = currentBounds;
             Log($"RESOLVED name='{_trackedItem.Name}' runtimeId={FormatRuntimeId(GetRuntimeId(currentItem.AutomationElement))} currentBounds={currentBounds}");
             return currentBounds;
+        }
+
+        private void UpdateDragState(bool leftButtonDown)
+        {
+            if (!leftButtonDown)
+            {
+                _isDragging = false;
+                return;
+            }
+
+            if (_wasLeftButtonDown || _isDragging || !_lastPosition.HasValue)
+                return;
+
+            if (!Win32Interop.GetCursorPos(out Win32Interop.POINT cursorPosition))
+                return;
+
+            Rect lastPosition = _lastPosition.Value;
+            if (cursorPosition.X < lastPosition.Left || cursorPosition.X > lastPosition.Right ||
+                cursorPosition.Y < lastPosition.Top || cursorPosition.Y > lastPosition.Bottom)
+            {
+                return;
+            }
+
+            _dragOffsetX = lastPosition.Left - cursorPosition.X;
+            _dragOffsetY = lastPosition.Top - cursorPosition.Y;
+            _isDragging = true;
+        }
+
+        private Rect? GetDraggedPosition()
+        {
+            if (!Win32Interop.GetCursorPos(out Win32Interop.POINT cursorPosition) || !_lastPosition.HasValue)
+                return _lastPosition;
+
+            Rect lastPosition = _lastPosition.Value;
+            return new Rect(
+                cursorPosition.X + _dragOffsetX,
+                cursorPosition.Y + _dragOffsetY,
+                lastPosition.Width,
+                lastPosition.Height);
+        }
+
+        private static bool IsLeftButtonDown()
+        {
+            return (Win32Interop.GetAsyncKeyState(Win32Interop.VK_LBUTTON) & 0x8000) != 0;
         }
 
         private static string FormatRect(Rect? rect)

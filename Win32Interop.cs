@@ -54,6 +54,14 @@ namespace DesktopKeychainApp
         public static extern bool ScreenToClient(IntPtr hWnd, ref POINT point);
 
         [DllImport("user32.dll", SetLastError = true)]
+        public static extern bool GetCursorPos(out POINT point);
+
+        [DllImport("user32.dll")]
+        public static extern short GetAsyncKeyState(int virtualKey);
+
+        public const int VK_LBUTTON = 0x01;
+
+        [DllImport("user32.dll", SetLastError = true)]
         public static extern IntPtr GetAncestor(IntPtr hWnd, uint flags);
 
         public const uint GA_ROOT = 2;
