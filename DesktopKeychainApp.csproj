@@ -21,12 +21,13 @@
     <None Remove="accessory_prototype\**" />
     <EmbeddedResource Remove="OneDrive\**" />
     <EmbeddedResource Remove="accessory_prototype\**" />
-    <Content Include="OneDrive\Documents\Allikk_Aabharanam-master\datasets\accessories\accessories.json"
-             Link="datasets\accessories\accessories.json"
-             CopyToOutputDirectory="PreserveNewest" />
-    <Content Include="OneDrive\Documents\Allikk_Aabharanam-master\assets\*.jpg"
-             Link="datasets\accessories\assets\%(Filename)%(Extension)"
-             CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Assets\Audio\*.mp3" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="OneDrive\Documents\Allikk_Aabharanam-master\datasets\accessories\accessories.json" Link="datasets\accessories\accessories.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="OneDrive\Documents\Allikk_Aabharanam-master\assets\*.jpg" Link="datasets\accessories\assets\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.2.1" />
   </ItemGroup>
 
 </Project>

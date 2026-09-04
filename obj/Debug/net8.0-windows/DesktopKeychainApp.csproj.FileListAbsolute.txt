@@ -84,3 +84,22 @@ C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\obj\Debug\net8.0-windo
 C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\obj\Debug\net8.0-windows\DesktopKeychainApp.pdb
 C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\obj\Debug\net8.0-windows\DesktopKeychainApp.genruntimeconfig.cache
 C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\obj\Debug\net8.0-windows\ref\DesktopKeychainApp.dll
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\bin\Debug\net8.0-windows\NAudio.dll
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\bin\Debug\net8.0-windows\NAudio.Asio.dll
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\bin\Debug\net8.0-windows\NAudio.Core.dll
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\bin\Debug\net8.0-windows\NAudio.Midi.dll
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\bin\Debug\net8.0-windows\NAudio.Wasapi.dll
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\bin\Debug\net8.0-windows\NAudio.WinForms.dll
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\bin\Debug\net8.0-windows\NAudio.WinMM.dll
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\obj\Debug\net8.0-windows\DesktopKeychainApp.csproj.AssemblyReference.cache
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\obj\Debug\net8.0-windows\DesktopK.4534A35C.Up2Date
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\bin\Debug\net8.0-windows\Assets\Audio\67 - Sound Effect.mp3
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\bin\Debug\net8.0-windows\Assets\Audio\Audio.mp3
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\bin\Debug\net8.0-windows\Assets\Audio\Aww   Sound Effect.mp3
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\bin\Debug\net8.0-windows\Assets\Audio\Cat Laughing Meme Sound Effect.mp3
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\bin\Debug\net8.0-windows\Assets\Audio\Faaah.mp3
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\bin\Debug\net8.0-windows\Assets\Audio\Helicopter.mp3
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\bin\Debug\net8.0-windows\Assets\Audio\oh hell na.mp3
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\bin\Debug\net8.0-windows\Assets\Audio\OMG (meme) - Sound Effect [L6CMypl1q8I].mp3
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\bin\Debug\net8.0-windows\Assets\Audio\Scary Music - Meme Sound Effect.mp3
+C:\Users\anjal\OneDrive\Documents\Allikk_Aabharanam-clean\bin\Debug\net8.0-windows\Assets\Audio\Spongebob a few moments later screen effect.mp3

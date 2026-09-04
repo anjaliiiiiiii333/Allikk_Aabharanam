@@ -1,18 +1,16 @@
 using System;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Interop;
-using System.Runtime.InteropServices;
 
 namespace DesktopKeychainApp
 {
     /// <summary>
-    /// Win32 interop for managing transparent overlay windows.
-    /// Handles window class registration, creation, and styling for click-through overlays.
+    /// Win32 interop for managing transparent overlay windows and low-level desktop input hooks.
     /// </summary>
     public static class Win32Interop
     {
-        // Window style constants
         public const int WS_EX_TRANSPARENT = 0x20;
         public const int WS_EX_LAYERED = 0x80000;
         public const int WS_EX_TOPMOST = 0x8;
@@ -22,13 +20,39 @@ namespace DesktopKeychainApp
         public const int SWP_NOACTIVATE = 0x10;
         public const int SWP_NOZORDER = 0x4;
         public const int SWP_SHOWWINDOW = 0x40;
-
-        // LWA constants for layered window
         public const int LWA_ALPHA = 0x2;
         public const int LWA_COLORKEY = 0x1;
-
-        // GWL_EXSTYLE for SetWindowLong
         public const int GWL_EXSTYLE = -20;
+
+        public const int VK_LBUTTON = 0x01;
+        public const int VK_CONTROL = 0x11;
+        public const int VK_C = 0x43;
+        public const int VK_V = 0x56;
+        public const int VK_DELETE = 0x2E;
+        public const int WH_MOUSE_LL = 14;
+        public const int WH_KEYBOARD_LL = 13;
+        public const uint GA_ROOT = 2;
+
+        public delegate IntPtr LowLevelMouseProc(int nCode, IntPtr wParam, IntPtr lParam);
+        public delegate IntPtr LowLevelKeyboardProc(int nCode, IntPtr wParam, IntPtr lParam);
+
+        public enum MouseMessages
+        {
+            WM_LBUTTONDOWN = 0x0201,
+            WM_LBUTTONUP = 0x0202,
+            WM_LBUTTONDBLCLK = 0x0203,
+            WM_MOUSEMOVE = 0x0200,
+            WM_RBUTTONDOWN = 0x0204,
+            WM_RBUTTONUP = 0x0205,
+            WM_MBUTTONDOWN = 0x0207,
+            WM_MBUTTONUP = 0x0208
+        }
+
+        public enum KeyboardMessages
+        {
+            WM_KEYDOWN = 0x0100,
+            WM_SYSKEYDOWN = 0x0104
+        }
 
         [DllImport("user32.dll", SetLastError = true)]
         public static extern IntPtr CreateWindowEx(
@@ -59,12 +83,8 @@ namespace DesktopKeychainApp
         [DllImport("user32.dll")]
         public static extern short GetAsyncKeyState(int virtualKey);
 
-        public const int VK_LBUTTON = 0x01;
-
         [DllImport("user32.dll", SetLastError = true)]
         public static extern IntPtr GetAncestor(IntPtr hWnd, uint flags);
-
-        public const uint GA_ROOT = 2;
 
         [DllImport("user32.dll", SetLastError = true)]
         public static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
@@ -82,6 +102,24 @@ namespace DesktopKeychainApp
 
         [DllImport("kernel32.dll", SetLastError = true)]
         public static extern IntPtr GetModuleHandle(string lpModuleName);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        public static extern IntPtr SetWindowsHookEx(int idHook, LowLevelMouseProc lpfn, IntPtr hMod, uint dwThreadId);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        public static extern IntPtr SetWindowsHookEx(int idHook, LowLevelKeyboardProc lpfn, IntPtr hMod, uint dwThreadId);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        public static extern bool UnhookWindowsHookEx(IntPtr hhk);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        public static extern IntPtr CallNextHookEx(IntPtr hhk, int nCode, IntPtr wParam, IntPtr lParam);
+
+        [DllImport("user32.dll", CharSet = CharSet.Unicode)]
+        public static extern int GetClassName(IntPtr hWnd, System.Text.StringBuilder className, int maxCount);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        public static extern IntPtr GetForegroundWindow();
 
         [StructLayout(LayoutKind.Sequential)]
         public struct POINT
@@ -107,11 +145,31 @@ namespace DesktopKeychainApp
 
             public BLENDFUNCTION(byte alpha)
             {
-                BlendOp = 0; // AC_SRC_OVER
+                BlendOp = 0;
                 BlendFlags = 0;
                 SourceConstantAlpha = alpha;
-                AlphaFormat = 1; // AC_SRC_ALPHA
+                AlphaFormat = 1;
             }
+        }
+
+        [StructLayout(LayoutKind.Sequential)]
+        public struct MSLLHOOKSTRUCT
+        {
+            public POINT pt;
+            public uint mouseData;
+            public uint flags;
+            public uint time;
+            public IntPtr dwExtraInfo;
+        }
+
+        [StructLayout(LayoutKind.Sequential)]
+        public struct KBDLLHOOKSTRUCT
+        {
+            public uint vkCode;
+            public uint scanCode;
+            public uint flags;
+            public uint time;
+            public IntPtr dwExtraInfo;
         }
 
         [DllImport("gdi32.dll", SetLastError = true)]
@@ -126,9 +184,6 @@ namespace DesktopKeychainApp
         [DllImport("gdi32.dll", SetLastError = true)]
         public static extern bool DeleteObject(IntPtr hObject);
 
-        /// <summary>
-        /// Creates a bitmap from a WPF BitmapSource.
-        /// </summary>
         public static IntPtr CreateBitmapFromWpfBitmap(System.Windows.Media.Imaging.BitmapSource wpfBitmap)
         {
             int stride = (wpfBitmap.PixelWidth * wpfBitmap.Format.BitsPerPixel + 7) / 8;

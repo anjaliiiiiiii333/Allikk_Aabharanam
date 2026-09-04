@@ -48,6 +48,13 @@
                            TextWrapping="Wrap" FontSize="11" Foreground="#333" LineHeight="16"/>
             </Border>
 
+            <!-- Audio Status Section -->
+            <TextBlock Text="Accessory Audio:" FontSize="12" FontWeight="Bold" Margin="0,15,0,8" Foreground="#555"/>
+            <Border Background="#EEF7EE" BorderBrush="#B9D9BA" BorderThickness="1" Padding="10" CornerRadius="3">
+                <TextBlock x:Name="AudioStatusTextBlock" Text="Audio: Enabled | Ready" 
+                           TextWrapping="Wrap" FontSize="11" Foreground="#1B5E20" LineHeight="16"/>
+            </Border>
+
             <!-- Info Section -->
             <TextBlock Text="Information:" FontSize="12" FontWeight="Bold" Margin="0,20,0,10" Foreground="#555"/>
             <Border Background="#E8F4F8" BorderBrush="#B0D4E0" BorderThickness="1" Padding="12" CornerRadius="3">
