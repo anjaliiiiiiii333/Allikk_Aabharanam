@@ -1,0 +1,47 @@
+<Window x:Class="DesktopKeychainApp.AccessoryAssignmentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Accessory Assignment" Height="560" Width="760"
+        WindowStartupLocation="CenterOwner" Background="#F0F0F0">
+    <Grid Margin="18">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="ACCESSORY ASSIGNMENT" FontSize="18" FontWeight="Bold" Foreground="#333" />
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,14,0,12">
+            <Button x:Name="ManualModeButton" Content="Manual" Click="ManualModeButton_Click" Padding="18,8" Margin="0,0,8,0" />
+            <Button x:Name="AutomaticModeButton" Content="Automatic" Click="AutomaticModeButton_Click" Padding="18,8" />
+        </StackPanel>
+
+        <Grid Grid.Row="2">
+            <Grid x:Name="ManualPanel">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <TextBlock Text="Choose an accessory, then choose the desktop item to attach it to." Foreground="#555" Margin="0,0,0,8" />
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Background="White" BorderBrush="#CCC" BorderThickness="1">
+                    <WrapPanel x:Name="AccessoryPanel" Margin="8" />
+                </ScrollViewer>
+                <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,12,0,0">
+                    <ComboBox x:Name="DesktopItemComboBox" Width="300" DisplayMemberPath="Name" Margin="0,0,8,0" />
+                    <Button Content="Assign Selected" Click="AssignSelectedButton_Click" Padding="12,7" Margin="0,0,8,0" />
+                    <Button Content="Remove Assignment" Click="RemoveAssignmentButton_Click" Padding="12,7" />
+                </StackPanel>
+            </Grid>
+
+            <StackPanel x:Name="AutomaticPanel" Visibility="Collapsed">
+                <TextBlock Text="Automatically assign real dataset accessories to desktop icons that do not have manual assignments." TextWrapping="Wrap" Foreground="#555" Margin="0,0,0,16" />
+                <Button Content="Generate Assignments" Click="GenerateAssignmentsButton_Click" Width="170" HorizontalAlignment="Left" Padding="12,8" />
+                <TextBlock x:Name="AutomaticStatusText" Margin="0,14,0,0" Foreground="#555" TextWrapping="Wrap" />
+            </StackPanel>
+        </Grid>
+
+        <TextBlock Grid.Row="3" x:Name="StatusText" Margin="0,14,0,0" Foreground="#555" TextWrapping="Wrap" />
+    </Grid>
+</Window>

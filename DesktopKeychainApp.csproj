@@ -10,4 +10,23 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="OneDrive\**" />
+    <Compile Remove="accessory_prototype\**" />
+    <Page Remove="OneDrive\**" />
+    <Page Remove="accessory_prototype\**" />
+    <ApplicationDefinition Remove="OneDrive\**" />
+    <ApplicationDefinition Remove="accessory_prototype\**" />
+    <None Remove="OneDrive\**" />
+    <None Remove="accessory_prototype\**" />
+    <EmbeddedResource Remove="OneDrive\**" />
+    <EmbeddedResource Remove="accessory_prototype\**" />
+    <Content Include="OneDrive\Documents\Allikk_Aabharanam-master\datasets\accessories\accessories.json"
+             Link="datasets\accessories\accessories.json"
+             CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="OneDrive\Documents\Allikk_Aabharanam-master\assets\*.jpg"
+             Link="datasets\accessories\assets\%(Filename)%(Extension)"
+             CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
 </Project>

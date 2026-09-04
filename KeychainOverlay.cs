@@ -216,9 +216,11 @@ namespace DesktopKeychainApp
 
             try
             {
-                // Anchor the keychain over the item's lower-right corner.
-                int overlayX = (int)(itemX + itemWidth - _keychainBitmap.Width + _offsetX);
-                int overlayY = (int)(itemY + itemHeight - _keychainBitmap.Height + _offsetY);
+                // The bitmap contains the icon-sized casing at its origin and the
+                // accessory immediately outside the right edge, so anchor its origin
+                // to the tracked icon's top-left corner.
+                int overlayX = (int)(itemX + _offsetX);
+                int overlayY = (int)(itemY + _offsetY);
                 bool repositioned = Win32Interop.SetWindowPos(
                     _overlayHandle,
                     IntPtr.Zero,
