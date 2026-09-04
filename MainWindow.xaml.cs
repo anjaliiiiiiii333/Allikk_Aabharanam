@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -19,6 +20,8 @@ namespace DesktopKeychainApp
         private KeychainOverlay _currentOverlay;
         private DispatcherTimer _statusUpdateTimer;
         private ObservableCollection<DesktopItem> _desktopItems;
+        private AccessoryAssignmentService _assignmentService;
+        private IReadOnlyList<AccessoryAsset> _accessories;
 
         public MainWindow()
         {
@@ -43,6 +46,8 @@ namespace DesktopKeychainApp
 
                 // Initialize detector
                 _detector = new DesktopIconDetector();
+                _assignmentService = new AccessoryAssignmentService();
+                _accessories = _assignmentService.LoadAvailableAccessories();
 
                 // Initialize items collection
                 _desktopItems = new ObservableCollection<DesktopItem>();
@@ -103,32 +108,75 @@ namespace DesktopKeychainApp
                 return;
             }
 
+            AttachAssignedAccessory(selectedItem);
+        }
+
+        private void AssignmentButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (_desktopItems.Count == 0)
+            {
+                UpdateStatus("Refresh Desktop Items before assigning accessories.");
+                return;
+            }
+
+            var assignmentWindow = new AccessoryAssignmentWindow(
+                _assignmentService,
+                _accessories,
+                _desktopItems)
+            {
+                Owner = this
+            };
+
+            if (assignmentWindow.ShowDialog() == true && assignmentWindow.AssignedItem != null)
+            {
+                DesktopItemsListBox.SelectedItem = assignmentWindow.AssignedItem;
+                AttachAssignedAccessory(assignmentWindow.AssignedItem);
+            }
+        }
+
+        private void AttachAssignedAccessory(DesktopItem selectedItem)
+        {
+            AccessoryAssignment assignment = _assignmentService.GetAssignment(selectedItem.Name);
+            AccessoryAsset accessory = assignment == null
+                ? null
+                : _assignmentService.FindAccessory(assignment.Accessory, _accessories);
+            if (accessory == null || !File.Exists(accessory.AssetPath))
+            {
+                UpdateStatus($"No dataset accessory is assigned to '{selectedItem.Name}'. Open Accessory Assignment first.");
+                return;
+            }
+
             try
             {
                 // Detach any existing keychain
                 DetachKeychain();
 
-                UpdateStatus($"Attaching keychain to '{selectedItem.Name}'...");
+                UpdateStatus($"Attaching {accessory.AccessoryName} to '{selectedItem.Name}'...");
 
-                // Load the keychain bitmap
-                string assetPath = Path.Combine(
-                    AppDomain.CurrentDomain.BaseDirectory,
-                    "Assets",
-                    "keychain.png");
-
-                if (!File.Exists(assetPath))
+                Rect itemBounds = selectedItem.BoundingRectangle;
+                var neighboringIcons = new List<Rectangle>();
+                foreach (DesktopItem item in _detector.GetDesktopItems())
                 {
-                    UpdateStatus($"Keychain asset not found at {assetPath}");
-                    return;
+                    if (ReferenceEquals(item, selectedItem))
+                        continue;
+
+                    neighboringIcons.Add(new Rectangle(
+                        (int)Math.Round(item.BoundingRectangle.Left - itemBounds.Left),
+                        (int)Math.Round(item.BoundingRectangle.Top - itemBounds.Top),
+                        (int)Math.Round(item.BoundingRectangle.Width),
+                        (int)Math.Round(item.BoundingRectangle.Height)));
                 }
 
-                Bitmap keychainBitmap = new Bitmap(assetPath);
+                Bitmap keychainBitmap = DatasetAccessoryRenderer.CreateOverlayBitmap(
+                    accessory.AssetPath,
+                    (int)Math.Round(itemBounds.Width),
+                    (int)Math.Round(itemBounds.Height),
+                    neighboringIcons);
 
                 // Create overlay
-                _currentOverlay = new KeychainOverlay(keychainBitmap, offsetX: 10, offsetY: 10);
+                _currentOverlay = new KeychainOverlay(keychainBitmap);
 
                 // Place the overlay at the item's current desktop coordinates.
-                Rect itemBounds = selectedItem.BoundingRectangle;
                 _currentOverlay.SetPosition(
                     itemBounds.Left,
                     itemBounds.Top,
@@ -140,7 +188,7 @@ namespace DesktopKeychainApp
                 _currentTracker.ItemFound += Tracker_ItemFound;
                 _currentTracker.StartTracking();
 
-                UpdateStatus($"Keychain attached to '{selectedItem.Name}'. Tracking its position.");
+                UpdateStatus($"{accessory.AccessoryName} attached to '{selectedItem.Name}'. Tracking its position.");
                 AttachButton.IsEnabled = false;
                 DetachButton.IsEnabled = true;
                 DesktopItemsListBox.IsEnabled = false;

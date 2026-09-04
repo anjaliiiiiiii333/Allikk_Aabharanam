@@ -1,0 +1,36 @@
+<Window x:Class="AccessoryPrototype.PrototypeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Accessory Rendering Prototype" Width="620" Height="430"
+        WindowStartupLocation="CenterScreen" Background="#F3F0EA"
+        Closing="Window_Closing">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="ACCESSORY RENDERING PROTOTYPE" FontSize="18" FontWeight="Bold" Foreground="#263238" />
+        <TextBlock Grid.Row="1" Text="Read-only dataset reference. The Windows icon stays underneath a thin casing; only the extracted physical accessory is rendered by this prototype." TextWrapping="Wrap" Margin="0,8,0,14" Foreground="#59636A" />
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Margin="0,0,8,0">
+                <TextBlock Text="Desktop file or folder" FontWeight="Bold" Margin="0,0,0,6" />
+                <ListBox x:Name="DesktopItemsList" Height="190" DisplayMemberPath="Name" />
+                <Button Content="Refresh desktop icons" Click="RefreshDesktopButton_Click" Padding="10,7" Margin="0,8,0,0" />
+            </StackPanel>
+            <StackPanel Grid.Column="1" Margin="8,0,0,0">
+                <TextBlock Text="Dataset accessory reference" FontWeight="Bold" Margin="0,0,0,6" />
+                <ComboBox x:Name="AccessoriesList" Height="28" DisplayMemberPath="Name" />
+                <TextBlock x:Name="DatasetStatus" TextWrapping="Wrap" Foreground="#59636A" Margin="0,10,0,0" />
+                <Button Content="Attach prototype" Click="AttachButton_Click" Padding="10,7" Margin="0,16,0,0" />
+                <Button Content="Detach prototype" Click="DetachButton_Click" Padding="10,7" Margin="0,8,0,0" />
+            </StackPanel>
+        </Grid>
+        <TextBlock Grid.Row="3" x:Name="StatusText" Text="Ready." Foreground="#59636A" Margin="0,14,0,0" />
+    </Grid>
+</Window>

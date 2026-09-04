@@ -30,7 +30,10 @@
                 <Button x:Name="RefreshButton" Content="Refresh Desktop Items" Click="RefreshButton_Click" 
                         Padding="12,8" Margin="0,0,10,0" Background="#007ACC" Foreground="White" FontSize="11"
                         Cursor="Hand" IsEnabled="True"/>
-                <Button x:Name="AttachButton" Content="Attach Keychain" Click="AttachButton_Click" 
+                <Button x:Name="AssignmentButton" Content="Accessory Assignment" Click="AssignmentButton_Click"
+                    Padding="12,8" Margin="0,0,10,0" Background="#6F42C1" Foreground="White" FontSize="11"
+                    Cursor="Hand" IsEnabled="True"/>
+                <Button x:Name="AttachButton" Content="Attach Assigned Accessory" Click="AttachButton_Click" 
                         Padding="12,8" Margin="0,0,10,0" Background="#28A745" Foreground="White" FontSize="11"
                         Cursor="Hand" IsEnabled="False"/>
                 <Button x:Name="DetachButton" Content="Detach Keychain" Click="DetachButton_Click" 
