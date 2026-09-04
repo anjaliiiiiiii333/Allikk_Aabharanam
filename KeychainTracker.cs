@@ -113,7 +113,14 @@ namespace DesktopKeychainApp
                     }
 
                     bool leftButtonDown = IsLeftButtonDown();
+                    bool dragEnded = _isDragging && !leftButtonDown;
                     UpdateDragState(leftButtonDown);
+
+                    if (dragEnded && !ReacquireTrackedItem())
+                    {
+                        ItemLost?.Invoke(this, new ItemLostEventArgs { Reason = "Item could not be reacquired after drag" });
+                        break;
+                    }
 
                     // Windows does not update UI Automation bounds while a shell drag is active.
                     Rect? position = _isDragging
@@ -154,6 +161,8 @@ namespace DesktopKeychainApp
                         consecutiveFailures++;
 
                         Log($"CURRENT_BOUNDS_FAILED name='{_trackedItem.Name}' attempt={consecutiveFailures}/{MAX_RETRIES}");
+
+                        ReacquireTrackedItem();
 
                         if (consecutiveFailures > MAX_RETRIES)
                         {
@@ -236,6 +245,22 @@ namespace DesktopKeychainApp
             _trackedItem.BoundingRectangle = currentBounds;
             Log($"RESOLVED name='{_trackedItem.Name}' runtimeId={FormatRuntimeId(GetRuntimeId(currentItem.AutomationElement))} currentBounds={currentBounds}");
             return currentBounds;
+        }
+
+        private bool ReacquireTrackedItem()
+        {
+            DesktopItem freshItem = _detector.FindFreshDesktopItemByName(_trackedItem.Name);
+            if (freshItem == null)
+            {
+                Log($"FRESH_REACQUIRE_FAILED name='{_trackedItem.Name}'");
+                return false;
+            }
+
+            _trackedItem.AutomationElement = freshItem.AutomationElement;
+            _trackedItem.BoundingRectangle = freshItem.BoundingRectangle;
+            _trackedItem.NativeListViewIndex = freshItem.NativeListViewIndex;
+            Log($"FRESH_REACQUIRED name='{_trackedItem.Name}' bounds={freshItem.BoundingRectangle}");
+            return true;
         }
 
         private void UpdateDragState(bool leftButtonDown)

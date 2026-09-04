@@ -107,6 +107,27 @@ namespace DesktopKeychainApp
         }
 
         /// <summary>
+        /// Re-locates a desktop item from the current Progman automation tree.
+        /// Windows can invalidate and recreate automation elements after a shell-level move,
+        /// so callers must not reuse the original element indefinitely.
+        /// </summary>
+        public DesktopItem FindFreshDesktopItemByName(string name)
+        {
+            try
+            {
+                List<DesktopItem> matchingItems = GetDesktopItems()
+                    .Where(item => string.Equals(item.Name, name, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+                return matchingItems.Count == 1 ? matchingItems[0] : null;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error re-locating desktop item '{name}': {ex.Message}");
+                return null;
+            }
+        }
+
+        /// <summary>
         /// Gets the current screen position (bounding rectangle) of a desktop item.
         /// Returns null if the item cannot be found or its position cannot be retrieved.
         /// </summary>

@@ -23,3 +23,8 @@ D:\Users\Bijay\Downloads\Allikk_Aabharanam-master\artifacts\build-validation\Des
 D:\Users\Bijay\Downloads\Allikk_Aabharanam-master\artifacts\build-validation\DesktopKeychainApp.runtimeconfig.json
 D:\Users\Bijay\Downloads\Allikk_Aabharanam-master\artifacts\build-validation\DesktopKeychainApp.dll
 D:\Users\Bijay\Downloads\Allikk_Aabharanam-master\artifacts\build-validation\DesktopKeychainApp.pdb
+D:\Users\Bijay\Downloads\Allikk_Aabharanam-master\artifacts\reacquire-validation\DesktopKeychainApp.exe
+D:\Users\Bijay\Downloads\Allikk_Aabharanam-master\artifacts\reacquire-validation\DesktopKeychainApp.deps.json
+D:\Users\Bijay\Downloads\Allikk_Aabharanam-master\artifacts\reacquire-validation\DesktopKeychainApp.runtimeconfig.json
+D:\Users\Bijay\Downloads\Allikk_Aabharanam-master\artifacts\reacquire-validation\DesktopKeychainApp.dll
+D:\Users\Bijay\Downloads\Allikk_Aabharanam-master\artifacts\reacquire-validation\DesktopKeychainApp.pdb
