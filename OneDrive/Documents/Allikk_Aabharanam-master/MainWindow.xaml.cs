@@ -17,6 +17,7 @@ namespace DesktopKeychainApp
         private DesktopIconDetector _detector;
         private KeychainTracker _currentTracker;
         private KeychainOverlay _currentOverlay;
+        private AudioManager _audioManager;
         private DispatcherTimer _statusUpdateTimer;
         private ObservableCollection<DesktopItem> _desktopItems;
 
@@ -43,6 +44,7 @@ namespace DesktopKeychainApp
 
                 // Initialize detector
                 _detector = new DesktopIconDetector();
+                _audioManager = new AudioManager();
 
                 // Initialize items collection
                 _desktopItems = new ObservableCollection<DesktopItem>();
@@ -135,12 +137,18 @@ namespace DesktopKeychainApp
                     itemBounds.Width,
                     itemBounds.Height);
 
+                bool attachAudioStarted = _audioManager.PlayOpen();
+                Debug.WriteLine($"Attach audio diagnostic: Faaah.mp3 started={attachAudioStarted} item='{selectedItem.Name}'");
+
                 _currentTracker = new KeychainTracker(_detector, _currentOverlay, selectedItem);
                 _currentTracker.ItemLost += Tracker_ItemLost;
                 _currentTracker.ItemFound += Tracker_ItemFound;
+                _currentTracker.ActionTriggered += Tracker_ActionTriggered;
                 _currentTracker.StartTracking();
 
-                UpdateStatus($"Keychain attached to '{selectedItem.Name}'. Tracking its position.");
+                UpdateStatus(attachAudioStarted
+                    ? $"Keychain attached to '{selectedItem.Name}'. Audio test started."
+                    : $"Keychain attached to '{selectedItem.Name}', but audio failed. See audio.log.");
                 AttachButton.IsEnabled = false;
                 DetachButton.IsEnabled = true;
                 DesktopItemsListBox.IsEnabled = false;
@@ -175,6 +183,7 @@ namespace DesktopKeychainApp
                 {
                     _currentTracker.ItemLost -= Tracker_ItemLost;
                     _currentTracker.ItemFound -= Tracker_ItemFound;
+                    _currentTracker.ActionTriggered -= Tracker_ActionTriggered;
                     _currentTracker.Dispose();
                     _currentTracker = null;
                 }
@@ -222,6 +231,33 @@ namespace DesktopKeychainApp
                     UpdateStatus($"Tracking '{_currentTracker.TrackedItem.Name}' - keychain is following!");
                 }
             });
+        }
+
+        private void Tracker_ActionTriggered(object sender, AudioActionEventArgs e)
+        {
+            if (_audioManager == null || _currentTracker == null)
+                return;
+
+            var action = e.Action;
+            Debug.WriteLine($"[{DateTime.UtcNow:O}] [OPEN_TRIGGER_LOG] Tracker_ActionTriggered fired: action={action} trackedItem='{_currentTracker.TrackedItem?.Name}'");
+
+            bool soundPlayed = action switch
+            {
+                DesktopAudioAction.Open => _audioManager.PlayOpen(),
+                DesktopAudioAction.Rename => _audioManager.PlayRename(),
+                DesktopAudioAction.Delete => _audioManager.PlayDelete(),
+                DesktopAudioAction.Copy => _audioManager.PlayCopy(),
+                DesktopAudioAction.Paste => _audioManager.PlayPaste(),
+                DesktopAudioAction.Move => _audioManager.PlayMove(),
+                DesktopAudioAction.DragStart => _audioManager.PlayDrag(),
+                DesktopAudioAction.Drop => _audioManager.PlayDrop(),
+                _ => false,
+            };
+
+            if (soundPlayed)
+            {
+                Debug.WriteLine($"[{DateTime.UtcNow:O}] [OPEN_TRIGGER_LOG] Audio triggered for attached desktop item: {action}");
+            }
         }
 
         /// <summary>
