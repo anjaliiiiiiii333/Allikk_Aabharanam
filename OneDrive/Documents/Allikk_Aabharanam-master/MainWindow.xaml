@@ -1,0 +1,61 @@
+<Window x:Class="DesktopKeychainApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Desktop Keychain Accessory" Height="500" Width="600"
+        WindowStartupLocation="CenterScreen"
+        Background="#F0F0F0"
+        Closing="Window_Closing">
+    <Grid>
+        <StackPanel Margin="20" VerticalAlignment="Stretch">
+            <!-- Title -->
+            <TextBlock Text="Desktop Keychain Accessory" FontSize="20" FontWeight="Bold" Margin="0,0,0,20" Foreground="#333"/>
+
+            <!-- Instructions -->
+            <TextBlock Text="Instructions:" FontSize="14" FontWeight="Bold" Margin="0,0,0,10" Foreground="#555"/>
+            <TextBlock Text="1. Click 'Refresh Desktop Items' to load the desktop icons&#10;2. Select an item from the list&#10;3. Click 'Attach Keychain' to attach the accessory&#10;4. Drag the item on your desktop - the keychain will follow!" 
+                       TextWrapping="Wrap" FontSize="11" Margin="0,0,0,20" Foreground="#666" LineHeight="18"/>
+
+            <!-- Desktop Items Section -->
+            <TextBlock Text="Desktop Items:" FontSize="12" FontWeight="Bold" Margin="0,0,0,10" Foreground="#555"/>
+            <ListBox x:Name="DesktopItemsListBox" Height="200" Margin="0,0,0,15" Background="White" BorderBrush="#CCCCCC" BorderThickness="1" SelectionChanged="DesktopItemsListBox_SelectionChanged">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}" Padding="8,4"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <!-- Button Row -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+                <Button x:Name="RefreshButton" Content="Refresh Desktop Items" Click="RefreshButton_Click" 
+                        Padding="12,8" Margin="0,0,10,0" Background="#007ACC" Foreground="White" FontSize="11"
+                        Cursor="Hand" IsEnabled="True"/>
+                <Button x:Name="AttachButton" Content="Attach Keychain" Click="AttachButton_Click" 
+                        Padding="12,8" Margin="0,0,10,0" Background="#28A745" Foreground="White" FontSize="11"
+                        Cursor="Hand" IsEnabled="False"/>
+                <Button x:Name="DetachButton" Content="Detach Keychain" Click="DetachButton_Click" 
+                        Padding="12,8" Background="#DC3545" Foreground="White" FontSize="11"
+                        Cursor="Hand" IsEnabled="False"/>
+            </StackPanel>
+
+            <!-- Status Section -->
+            <TextBlock Text="Status:" FontSize="12" FontWeight="Bold" Margin="0,0,0,10" Foreground="#555"/>
+            <Border Background="White" BorderBrush="#CCCCCC" BorderThickness="1" Padding="12" CornerRadius="3">
+                <TextBlock x:Name="StatusTextBlock" Text="Ready. Click 'Refresh Desktop Items' to begin." 
+                           TextWrapping="Wrap" FontSize="11" Foreground="#333" LineHeight="16"/>
+            </Border>
+
+            <!-- Info Section -->
+            <TextBlock Text="Information:" FontSize="12" FontWeight="Bold" Margin="0,20,0,10" Foreground="#555"/>
+            <Border Background="#E8F4F8" BorderBrush="#B0D4E0" BorderThickness="1" Padding="12" CornerRadius="3">
+                <TextBlock TextWrapping="Wrap" FontSize="10" Foreground="#333">
+                    <Run FontWeight="Bold">Desktop Detection:</Run> <Run>Uses Windows UIAutomation to detect files, folders, and app shortcuts on your desktop.</Run>
+                    <LineBreak/><LineBreak/>
+                    <Run FontWeight="Bold">Transparent Overlay:</Run> <Run>The keychain appears as a transparent PNG overlay positioned relative to the icon, not as a modification to the original file.</Run>
+                    <LineBreak/><LineBreak/>
+                    <Run FontWeight="Bold">Safe:</Run> <Run>Your desktop items remain completely unchanged. No files are modified, moved, or renamed.</Run>
+                </TextBlock>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Window>
