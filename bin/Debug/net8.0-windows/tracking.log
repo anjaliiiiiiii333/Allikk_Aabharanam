@@ -1,0 +1,182 @@
+2026-09-04T20:32:37.2607776+05:30 ATTACH name='Learn about this picture' originalRuntimeId=42,65846,4,0 originalBounds=0,5,94,87
+2026-09-04T20:32:37.2784849+05:30 TRACKING_STARTED thread=7 apartment=STA
+2026-09-04T20:32:37.3541888+05:30 QUERY name='Learn about this picture' itemCount=65 originalRuntimeId=42,65846,4,0
+2026-09-04T20:32:37.3564708+05:30 RUNTIME_MATCH name='Learn about this picture' matched=True
+2026-09-04T20:32:41.9072530+05:30 NATIVE_POSITION_FAILED name='Learn about this picture' index=0; using UIA bounds
+2026-09-04T20:32:41.9080846+05:30 RESOLVED name='Learn about this picture' runtimeId=42,65846,4,0 currentBounds=0,5,94,87
+2026-09-04T20:32:41.9089544+05:30 CYCLE name='Learn about this picture' oldBounds=<none> newBounds=0,5,94,87 boundsChanged=True
+2026-09-04T20:32:41.9104623+05:30 REPOSITION name='Learn about this picture' calculatedOverlay=(40,38) overlayCall=True nativeResult=True
+2026-09-04T20:32:42.0201793+05:30 QUERY name='Learn about this picture' itemCount=0 originalRuntimeId=42,65846,4,0
+2026-09-04T20:32:42.0205867+05:30 RUNTIME_MATCH name='Learn about this picture' matched=False
+2026-09-04T20:32:42.0217191+05:30 ITEM_NOT_FOUND name='Learn about this picture'
+2026-09-04T20:32:42.0221191+05:30 CURRENT_BOUNDS_FAILED name='Learn about this picture' attempt=1/3
+2026-09-04T20:32:42.1222003+05:30 QUERY name='Learn about this picture' itemCount=0 originalRuntimeId=42,65846,4,0
+2026-09-04T20:32:42.1225789+05:30 RUNTIME_MATCH name='Learn about this picture' matched=False
+2026-09-04T20:32:42.1233870+05:30 ITEM_NOT_FOUND name='Learn about this picture'
+2026-09-04T20:32:42.1241413+05:30 CURRENT_BOUNDS_FAILED name='Learn about this picture' attempt=2/3
+2026-09-04T20:32:42.2390040+05:30 QUERY name='Learn about this picture' itemCount=0 originalRuntimeId=42,65846,4,0
+2026-09-04T20:32:42.2408293+05:30 RUNTIME_MATCH name='Learn about this picture' matched=False
+2026-09-04T20:32:42.2425463+05:30 ITEM_NOT_FOUND name='Learn about this picture'
+2026-09-04T20:32:42.2437683+05:30 CURRENT_BOUNDS_FAILED name='Learn about this picture' attempt=3/3
+2026-09-04T20:32:42.3525302+05:30 QUERY name='Learn about this picture' itemCount=0 originalRuntimeId=42,65846,4,0
+2026-09-04T20:32:42.3531296+05:30 RUNTIME_MATCH name='Learn about this picture' matched=False
+2026-09-04T20:32:42.3534920+05:30 ITEM_NOT_FOUND name='Learn about this picture'
+2026-09-04T20:32:42.3538062+05:30 CURRENT_BOUNDS_FAILED name='Learn about this picture' attempt=4/3
+2026-09-04T21:39:33.2524520+05:30 ATTACH name='Bijay' originalRuntimeId=42,65938,4,0 originalBounds=0,5,94,67
+2026-09-04T21:39:33.2747455+05:30 TRACKING_STARTED thread=5 apartment=STA
+2026-09-04T21:39:33.3562672+05:30 QUERY name='Bijay' itemCount=65 originalRuntimeId=42,65938,4,0
+2026-09-04T21:39:33.3577305+05:30 RUNTIME_MATCH name='Bijay' matched=True
+2026-09-04T21:39:40.6840754+05:30 NATIVE_POSITION_FAILED name='Bijay' index=0; using UIA bounds
+2026-09-04T21:39:40.6846283+05:30 RESOLVED name='Bijay' runtimeId=42,65938,4,0 currentBounds=0,5,94,67
+2026-09-04T21:39:40.6853502+05:30 CYCLE name='Bijay' oldBounds=<none> newBounds=0,5,94,67 boundsChanged=True
+2026-09-04T21:39:40.7522893+05:30 REPOSITION name='Bijay' calculatedOverlay=(40,18) overlayCall=True nativeResult=True
+2026-09-04T21:39:40.8720044+05:30 QUERY name='Bijay' itemCount=0 originalRuntimeId=42,65938,4,0
+2026-09-04T21:39:40.8722695+05:30 RUNTIME_MATCH name='Bijay' matched=False
+2026-09-04T21:39:40.8731439+05:30 ITEM_NOT_FOUND name='Bijay'
+2026-09-04T21:39:40.8733826+05:30 CURRENT_BOUNDS_FAILED name='Bijay' attempt=1/3
+2026-09-04T21:39:40.9801289+05:30 QUERY name='Bijay' itemCount=0 originalRuntimeId=42,65938,4,0
+2026-09-04T21:39:40.9804183+05:30 RUNTIME_MATCH name='Bijay' matched=False
+2026-09-04T21:39:40.9811038+05:30 ITEM_NOT_FOUND name='Bijay'
+2026-09-04T21:39:40.9813725+05:30 CURRENT_BOUNDS_FAILED name='Bijay' attempt=2/3
+2026-09-04T21:39:41.0907027+05:30 QUERY name='Bijay' itemCount=0 originalRuntimeId=42,65938,4,0
+2026-09-04T21:39:41.0910187+05:30 RUNTIME_MATCH name='Bijay' matched=False
+2026-09-04T21:39:41.0913435+05:30 ITEM_NOT_FOUND name='Bijay'
+2026-09-04T21:39:41.0915937+05:30 CURRENT_BOUNDS_FAILED name='Bijay' attempt=3/3
+2026-09-04T21:39:41.2001211+05:30 QUERY name='Bijay' itemCount=0 originalRuntimeId=42,65938,4,0
+2026-09-04T21:39:41.2004427+05:30 RUNTIME_MATCH name='Bijay' matched=False
+2026-09-04T21:39:41.2006334+05:30 ITEM_NOT_FOUND name='Bijay'
+2026-09-04T21:39:41.2008110+05:30 CURRENT_BOUNDS_FAILED name='Bijay' attempt=4/3
+2026-09-04T21:40:04.4406094+05:30 ATTACH name='Bijay' originalRuntimeId=42,65938,4,0 originalBounds=0,5,94,67
+2026-09-04T21:40:04.4425939+05:30 TRACKING_STARTED thread=6 apartment=STA
+2026-09-04T21:40:04.5187714+05:30 QUERY name='Bijay' itemCount=65 originalRuntimeId=42,65938,4,0
+2026-09-04T21:40:04.5191056+05:30 RUNTIME_MATCH name='Bijay' matched=False
+2026-09-04T21:40:04.5196773+05:30 NAME_FALLBACK name='Bijay' matchedRuntimeId=42,196732,4,0
+2026-09-04T21:40:08.1258501+05:30 NATIVE_POSITION_FAILED name='Bijay' index=0; using UIA bounds
+2026-09-04T21:40:08.1262644+05:30 RESOLVED name='Bijay' runtimeId=42,196732,4,0 currentBounds=0,5,94,67
+2026-09-04T21:40:08.1266151+05:30 CYCLE name='Bijay' oldBounds=<none> newBounds=0,5,94,67 boundsChanged=True
+2026-09-04T21:40:08.1332511+05:30 REPOSITION name='Bijay' calculatedOverlay=(40,18) overlayCall=True nativeResult=True
+2026-09-04T21:40:08.2376905+05:30 QUERY name='Bijay' itemCount=0 originalRuntimeId=42,65938,4,0
+2026-09-04T21:40:08.2379475+05:30 RUNTIME_MATCH name='Bijay' matched=False
+2026-09-04T21:40:08.2380993+05:30 ITEM_NOT_FOUND name='Bijay'
+2026-09-04T21:40:08.2382232+05:30 CURRENT_BOUNDS_FAILED name='Bijay' attempt=1/3
+2026-09-04T21:40:08.3543519+05:30 QUERY name='Bijay' itemCount=0 originalRuntimeId=42,65938,4,0
+2026-09-04T21:40:08.3623040+05:30 RUNTIME_MATCH name='Bijay' matched=False
+2026-09-04T21:40:08.3626600+05:30 ITEM_NOT_FOUND name='Bijay'
+2026-09-04T21:40:08.3643199+05:30 CURRENT_BOUNDS_FAILED name='Bijay' attempt=2/3
+2026-09-04T21:40:08.4640384+05:30 QUERY name='Bijay' itemCount=0 originalRuntimeId=42,65938,4,0
+2026-09-04T21:40:08.4657125+05:30 RUNTIME_MATCH name='Bijay' matched=False
+2026-09-04T21:40:08.4660691+05:30 ITEM_NOT_FOUND name='Bijay'
+2026-09-04T21:40:08.4663581+05:30 CURRENT_BOUNDS_FAILED name='Bijay' attempt=3/3
+2026-09-04T21:40:08.5633393+05:30 QUERY name='Bijay' itemCount=0 originalRuntimeId=42,65938,4,0
+2026-09-04T21:40:08.5635936+05:30 RUNTIME_MATCH name='Bijay' matched=False
+2026-09-04T21:40:08.5638430+05:30 ITEM_NOT_FOUND name='Bijay'
+2026-09-04T21:40:08.5640525+05:30 CURRENT_BOUNDS_FAILED name='Bijay' attempt=4/3
+2026-09-04T21:44:44.6406376+05:30 ATTACH name='Brave' originalRuntimeId=42,328940,4,6 originalBounds=0,617,94,67
+2026-09-04T21:44:44.6440326+05:30 TRACKING_STARTED thread=3 apartment=STA
+2026-09-04T21:44:44.7113789+05:30 QUERY name='Brave' itemCount=65 originalRuntimeId=42,328940,4,6
+2026-09-04T21:44:44.7116918+05:30 RUNTIME_MATCH name='Brave' matched=True
+2026-09-04T21:44:48.4764992+05:30 NATIVE_POSITION_FAILED name='Brave' index=6; using UIA bounds
+2026-09-04T21:44:48.4768741+05:30 RESOLVED name='Brave' runtimeId=42,328940,4,6 currentBounds=0,617,94,67
+2026-09-04T21:44:48.4771462+05:30 CYCLE name='Brave' oldBounds=<none> newBounds=0,617,94,67 boundsChanged=True
+2026-09-04T21:44:48.4869461+05:30 REPOSITION name='Brave' calculatedOverlay=(40,630) overlayCall=True nativeResult=True
+2026-09-04T21:44:48.5979986+05:30 QUERY name='Brave' itemCount=0 originalRuntimeId=42,328940,4,6
+2026-09-04T21:44:48.5989549+05:30 RUNTIME_MATCH name='Brave' matched=False
+2026-09-04T21:44:48.5996199+05:30 ITEM_NOT_FOUND name='Brave'
+2026-09-04T21:44:48.6000938+05:30 CURRENT_BOUNDS_FAILED name='Brave' attempt=1/3
+2026-09-04T21:44:48.7039139+05:30 QUERY name='Brave' itemCount=0 originalRuntimeId=42,328940,4,6
+2026-09-04T21:44:48.7196293+05:30 RUNTIME_MATCH name='Brave' matched=False
+2026-09-04T21:44:48.7198954+05:30 ITEM_NOT_FOUND name='Brave'
+2026-09-04T21:44:48.7203330+05:30 CURRENT_BOUNDS_FAILED name='Brave' attempt=2/3
+2026-09-04T21:44:48.8904543+05:30 QUERY name='Brave' itemCount=0 originalRuntimeId=42,328940,4,6
+2026-09-04T21:44:48.8908387+05:30 RUNTIME_MATCH name='Brave' matched=False
+2026-09-04T21:44:48.8912312+05:30 ITEM_NOT_FOUND name='Brave'
+2026-09-04T21:44:48.8915445+05:30 CURRENT_BOUNDS_FAILED name='Brave' attempt=3/3
+2026-09-04T21:44:48.9975990+05:30 QUERY name='Brave' itemCount=0 originalRuntimeId=42,328940,4,6
+2026-09-04T21:44:48.9978665+05:30 RUNTIME_MATCH name='Brave' matched=False
+2026-09-04T21:44:48.9980750+05:30 ITEM_NOT_FOUND name='Brave'
+2026-09-04T21:44:48.9982513+05:30 CURRENT_BOUNDS_FAILED name='Brave' attempt=4/3
+2026-09-04T21:46:13.7026283+05:30 ATTACH name='Bijay' originalRuntimeId=42,458928,4,0 originalBounds=0,5,94,67
+2026-09-04T21:46:13.7169497+05:30 TRACKING_STARTED thread=5 apartment=STA
+2026-09-04T21:46:13.7978214+05:30 QUERY name='Bijay' itemCount=65 originalRuntimeId=42,458928,4,0
+2026-09-04T21:46:13.7987949+05:30 RUNTIME_MATCH name='Bijay' matched=True
+2026-09-04T21:46:17.1891696+05:30 NATIVE_POSITION_FAILED name='Bijay' index=0; using UIA bounds
+2026-09-04T21:46:17.1896098+05:30 RESOLVED name='Bijay' runtimeId=42,458928,4,0 currentBounds=0,5,94,67
+2026-09-04T21:46:17.1903030+05:30 CYCLE name='Bijay' oldBounds=<none> newBounds=0,5,94,67 boundsChanged=True
+2026-09-04T21:46:17.1907561+05:30 REPOSITION name='Bijay' calculatedOverlay=(40,18) overlayCall=False nativeResult=True
+2026-09-04T21:46:17.2582141+05:30 TRACKING_EXCEPTION name='Bijay' type=System.ObjectDisposedException message='The CancellationTokenSource has been disposed.' stack='   at System.Threading.CancellationTokenSource.get_WaitHandle()
+   at DesktopKeychainApp.KeychainTracker.TrackingLoop(CancellationToken cancellationToken) in D:\Users\Bijay\Downloads\Allikk_Aabharanam-master\KeychainTracker.cs:line 156'
+2026-09-04T21:46:22.2482743+05:30 ATTACH name='Bijay' originalRuntimeId=42,458928,4,0 originalBounds=0,5,94,67
+2026-09-04T21:46:22.2492918+05:30 TRACKING_STARTED thread=6 apartment=STA
+2026-09-04T21:46:58.8390958+05:30 ATTACH name='Bijay' originalRuntimeId=42,524404,4,0 originalBounds=0,5,94,67
+2026-09-04T21:46:58.8527423+05:30 TRACKING_STARTED thread=5 apartment=STA
+2026-09-04T21:46:58.9276510+05:30 QUERY name='Bijay' itemCount=65 originalRuntimeId=42,524404,4,0
+2026-09-04T21:46:58.9287933+05:30 RUNTIME_MATCH name='Bijay' matched=True
+2026-09-04T21:47:02.1292829+05:30 NATIVE_POSITION_FAILED name='Bijay' index=0; using UIA bounds
+2026-09-04T21:47:02.1300139+05:30 RESOLVED name='Bijay' runtimeId=42,524404,4,0 currentBounds=0,5,94,67
+2026-09-04T21:47:02.1308876+05:30 CYCLE name='Bijay' oldBounds=<none> newBounds=0,5,94,67 boundsChanged=True
+2026-09-04T21:47:02.1351418+05:30 REPOSITION name='Bijay' calculatedOverlay=(40,18) overlayCall=True nativeResult=True
+2026-09-04T21:47:02.2337066+05:30 QUERY name='Bijay' itemCount=0 originalRuntimeId=42,524404,4,0
+2026-09-04T21:47:02.2340749+05:30 RUNTIME_MATCH name='Bijay' matched=False
+2026-09-04T21:47:02.2345627+05:30 ITEM_NOT_FOUND name='Bijay'
+2026-09-04T21:47:02.2348611+05:30 CURRENT_BOUNDS_FAILED name='Bijay' attempt=1/3
+2026-09-04T21:47:02.3401160+05:30 QUERY name='Bijay' itemCount=0 originalRuntimeId=42,524404,4,0
+2026-09-04T21:47:02.3403941+05:30 RUNTIME_MATCH name='Bijay' matched=False
+2026-09-04T21:47:02.3407539+05:30 ITEM_NOT_FOUND name='Bijay'
+2026-09-04T21:47:02.3409587+05:30 CURRENT_BOUNDS_FAILED name='Bijay' attempt=2/3
+2026-09-04T21:47:02.4494342+05:30 QUERY name='Bijay' itemCount=0 originalRuntimeId=42,524404,4,0
+2026-09-04T21:47:02.4496845+05:30 RUNTIME_MATCH name='Bijay' matched=False
+2026-09-04T21:47:02.4499109+05:30 ITEM_NOT_FOUND name='Bijay'
+2026-09-04T21:47:02.4500885+05:30 CURRENT_BOUNDS_FAILED name='Bijay' attempt=3/3
+2026-09-04T21:47:02.5589788+05:30 QUERY name='Bijay' itemCount=0 originalRuntimeId=42,524404,4,0
+2026-09-04T21:47:02.5593021+05:30 RUNTIME_MATCH name='Bijay' matched=False
+2026-09-04T21:47:02.5595523+05:30 ITEM_NOT_FOUND name='Bijay'
+2026-09-04T21:47:02.5597315+05:30 CURRENT_BOUNDS_FAILED name='Bijay' attempt=4/3
+2026-09-04T21:51:08.1143484+05:30 ATTACH name='Bijay' originalRuntimeId=42,394544,4,0 originalBounds=0,5,94,67
+2026-09-04T21:51:08.1279413+05:30 TRACKING_STARTED thread=5 apartment=STA
+2026-09-04T21:51:08.2004739+05:30 QUERY name='Bijay' itemCount=65 originalRuntimeId=42,394544,4,0
+2026-09-04T21:51:08.2015621+05:30 RUNTIME_MATCH name='Bijay' matched=True
+2026-09-04T21:51:11.4248297+05:30 NATIVE_POSITION_FAILED name='Bijay' index=0; using UIA bounds
+2026-09-04T21:51:11.4253295+05:30 RESOLVED name='Bijay' runtimeId=42,394544,4,0 currentBounds=0,5,94,67
+2026-09-04T21:51:11.4260461+05:30 CYCLE name='Bijay' oldBounds=<none> newBounds=0,5,94,67 boundsChanged=True
+2026-09-04T21:51:11.4388425+05:30 REPOSITION name='Bijay' calculatedOverlay=(40,18) overlayCall=True nativeResult=True
+2026-09-04T21:51:11.5422591+05:30 QUERY name='Bijay' itemCount=0 originalRuntimeId=42,394544,4,0
+2026-09-04T21:51:11.5425585+05:30 RUNTIME_MATCH name='Bijay' matched=False
+2026-09-04T21:51:11.5429798+05:30 ITEM_NOT_FOUND name='Bijay'
+2026-09-04T21:51:11.5432721+05:30 CURRENT_BOUNDS_FAILED name='Bijay' attempt=1/3
+2026-09-04T21:51:11.6613748+05:30 QUERY name='Bijay' itemCount=0 originalRuntimeId=42,394544,4,0
+2026-09-04T21:51:11.6616544+05:30 RUNTIME_MATCH name='Bijay' matched=False
+2026-09-04T21:51:11.6619982+05:30 ITEM_NOT_FOUND name='Bijay'
+2026-09-04T21:51:11.6624151+05:30 CURRENT_BOUNDS_FAILED name='Bijay' attempt=2/3
+2026-09-04T21:51:11.7708215+05:30 QUERY name='Bijay' itemCount=0 originalRuntimeId=42,394544,4,0
+2026-09-04T21:51:11.7711189+05:30 RUNTIME_MATCH name='Bijay' matched=False
+2026-09-04T21:51:11.7713370+05:30 ITEM_NOT_FOUND name='Bijay'
+2026-09-04T21:51:11.7715433+05:30 CURRENT_BOUNDS_FAILED name='Bijay' attempt=3/3
+2026-09-04T21:51:11.8801806+05:30 QUERY name='Bijay' itemCount=0 originalRuntimeId=42,394544,4,0
+2026-09-04T21:51:11.8805307+05:30 RUNTIME_MATCH name='Bijay' matched=False
+2026-09-04T21:51:11.8807670+05:30 ITEM_NOT_FOUND name='Bijay'
+2026-09-04T21:51:11.8809394+05:30 CURRENT_BOUNDS_FAILED name='Bijay' attempt=4/3
+2026-09-04T21:54:09.4747463+05:30 ATTACH name='This PC' originalRuntimeId=42,394544,4,1 originalBounds=0,107,94,67
+2026-09-04T21:54:09.4755142+05:30 TRACKING_STARTED thread=5 apartment=STA
+2026-09-04T21:54:09.5423818+05:30 QUERY name='This PC' itemCount=65 originalRuntimeId=42,394544,4,1
+2026-09-04T21:54:09.5427673+05:30 RUNTIME_MATCH name='This PC' matched=False
+2026-09-04T21:54:09.5432566+05:30 NAME_FALLBACK name='This PC' matchedRuntimeId=42,590246,4,1
+2026-09-04T21:54:12.6199219+05:30 NATIVE_POSITION_FAILED name='This PC' index=1; using UIA bounds
+2026-09-04T21:54:12.6212656+05:30 RESOLVED name='This PC' runtimeId=42,590246,4,1 currentBounds=0,107,94,67
+2026-09-04T21:54:12.6215562+05:30 CYCLE name='This PC' oldBounds=<none> newBounds=0,107,94,67 boundsChanged=True
+2026-09-04T21:54:12.6318610+05:30 REPOSITION name='This PC' calculatedOverlay=(40,120) overlayCall=True nativeResult=True
+2026-09-04T21:54:12.7356030+05:30 QUERY name='This PC' itemCount=0 originalRuntimeId=42,394544,4,1
+2026-09-04T21:54:12.7359322+05:30 RUNTIME_MATCH name='This PC' matched=False
+2026-09-04T21:54:12.7361112+05:30 ITEM_NOT_FOUND name='This PC'
+2026-09-04T21:54:12.7362725+05:30 CURRENT_BOUNDS_FAILED name='This PC' attempt=1/3
+2026-09-04T21:54:12.8449944+05:30 QUERY name='This PC' itemCount=0 originalRuntimeId=42,394544,4,1
+2026-09-04T21:54:12.8461497+05:30 RUNTIME_MATCH name='This PC' matched=False
+2026-09-04T21:54:12.8464434+05:30 ITEM_NOT_FOUND name='This PC'
+2026-09-04T21:54:12.8466665+05:30 CURRENT_BOUNDS_FAILED name='This PC' attempt=2/3
+2026-09-04T21:54:12.9499525+05:30 QUERY name='This PC' itemCount=0 originalRuntimeId=42,394544,4,1
+2026-09-04T21:54:12.9502008+05:30 RUNTIME_MATCH name='This PC' matched=False
+2026-09-04T21:54:12.9504231+05:30 ITEM_NOT_FOUND name='This PC'
+2026-09-04T21:54:12.9506169+05:30 CURRENT_BOUNDS_FAILED name='This PC' attempt=3/3
+2026-09-04T21:54:13.0593412+05:30 QUERY name='This PC' itemCount=0 originalRuntimeId=42,394544,4,1
+2026-09-04T21:54:13.0595966+05:30 RUNTIME_MATCH name='This PC' matched=False
+2026-09-04T21:54:13.0598922+05:30 ITEM_NOT_FOUND name='This PC'
+2026-09-04T21:54:13.0600991+05:30 CURRENT_BOUNDS_FAILED name='This PC' attempt=4/3
