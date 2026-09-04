@@ -27,23 +27,30 @@ namespace DesktopKeychainApp
 
             using var source = new Bitmap(sourcePath);
             Rectangle region = SelectAccessoryRegion(source, sourcePath);
-            using Bitmap accessory = source.Clone(region, PixelFormat.Format32bppArgb);
+
             if (IsRibbonAccessory(sourcePath))
             {
-                RemoveRibbonPresentationBackground(accessory);
-                return CreateRibbonOverlay(accessory, iconWidth, iconHeight);
+                using Bitmap ribbonAccessory = source.Clone(region, PixelFormat.Format32bppArgb);
+                RemoveRibbonPresentationBackground(ribbonAccessory);
+                return CreateRibbonOverlay(ribbonAccessory, iconWidth, iconHeight);
             }
 
-            RemovePresentationBackground(accessory, UsesLightObjectBackground(sourcePath));
+            if (IsMustacheAccessory(sourcePath))
+            {
+                return CreateMustacheOverlay(source, iconWidth, iconHeight);
+            }
 
-            int accessoryHeight = Math.Max(22, (int)Math.Round(iconHeight * 0.65));
+            // Extract and cleanly separate the physical keychain asset from the source composition
+            using Bitmap accessory = ExtractAndCleanKeychain(source, sourcePath);
+
+            // Scale the physical keychain independently (1.35x icon height) so clasp, chain, ring, and charms are prominent
+            int accessoryHeight = Math.Max(40, (int)Math.Round(iconHeight * 1.35));
             int accessoryWidth = Math.Max(1, (int)Math.Round(
                 accessoryHeight * (double)accessory.Width / accessory.Height));
-            const int attachmentOverlap = 12;
-            const int outsideGap = 1;
+            int claspOverlap = Math.Max(4, (int)Math.Round(iconWidth * 0.08));
             const int verticalMargin = 4;
 
-            int overlayWidth = iconWidth + outsideGap + accessoryWidth + 2;
+            int overlayWidth = iconWidth - claspOverlap + accessoryWidth + 2;
             int overlayHeight = Math.Max(iconHeight + verticalMargin * 2, accessoryHeight + verticalMargin * 2);
             var composite = new Bitmap(overlayWidth, overlayHeight, PixelFormat.Format32bppPArgb);
 
@@ -68,11 +75,14 @@ namespace DesktopKeychainApp
                     new Rectangle(1, 1, Math.Max(1, iconWidth - 2), Math.Max(1, iconHeight - 2)),
                     Math.Min(7, Math.Max(1, Math.Min(iconWidth, iconHeight) / 5))))
                 using (var casingPen = new Pen(Color.FromArgb(82, 190, 225, 240), 1f))
-                using (var documentBrush = new SolidBrush(Color.FromArgb(72, 255, 255, 255)))
                 {
+                    graphics.CompositingMode = CompositingMode.SourceOver;
+                    graphics.SmoothingMode = SmoothingMode.AntiAlias;
+                    graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                    graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
                     graphics.Clear(Color.Transparent);
+
                     graphics.DrawPath(casingPen, casingPath);
-                    DrawDocumentBacking(graphics, iconWidth, iconHeight, documentBrush);
                     graphics.DrawImage(accessory,
                         new Rectangle(placement.Left, placement.Top, accessoryWidth, accessoryHeight),
                         0, 0, accessory.Width, accessory.Height, GraphicsUnit.Pixel);
@@ -95,12 +105,8 @@ namespace DesktopKeychainApp
 
                 graphics.DrawPath(casingPen, casingPath);
 
-                int accessoryX = centerMounted
-                    ? Math.Max(0, (iconWidth - accessoryWidth) / 2)
-                    : iconWidth - attachmentOverlap + outsideGap;
-                int accessoryY = centerMounted
-                    ? Math.Max(0, (iconHeight - accessoryHeight) / 2)
-                    : Math.Max(2, (iconHeight - accessoryHeight) / 2);
+                int accessoryX = iconWidth - claspOverlap;
+                int accessoryY = 0;
                 graphics.DrawImage(
                     accessory,
                     new Rectangle(accessoryX, accessoryY, accessoryWidth, accessoryHeight),
@@ -114,24 +120,53 @@ namespace DesktopKeychainApp
             return composite;
         }
 
-        private static void DrawDocumentBacking(Graphics graphics, int iconWidth, int iconHeight, Brush brush)
+        private static Bitmap ExtractAndCleanKeychain(Bitmap source, string sourcePath)
         {
-            int insetX = Math.Max(2, (int)Math.Round(iconWidth * 0.08));
-            int insetY = Math.Max(2, (int)Math.Round(iconHeight * 0.06));
-            int left = insetX;
-            int top = insetY;
-            int right = iconWidth - insetX;
-            int bottom = iconHeight - insetY;
-            int fold = Math.Max(3, (int)Math.Round(Math.Min(iconWidth, iconHeight) * 0.12));
-            Point[] points =
+            Rectangle region = SelectAccessoryRegion(source, sourcePath);
+            using Bitmap crop = source.Clone(region, PixelFormat.Format32bppArgb);
+            int w = crop.Width;
+            int h = crop.Height;
+
+            Bitmap result = new Bitmap(w, h, PixelFormat.Format32bppArgb);
+
+            for (int y = 0; y < h; y++)
             {
-                new Point(left, top),
-                new Point(right - fold, top),
-                new Point(right, top + fold),
-                new Point(right, bottom),
-                new Point(left, bottom)
-            };
-            graphics.FillPolygon(brush, points);
+                for (int x = 0; x < w; x++)
+                {
+                    Color p = crop.GetPixel(x, y);
+
+                    // 1. Remove acrylic plate border on the left (below clasp level)
+                    if (x < w * 0.16 && y > h * 0.12)
+                    {
+                        if (p.R < 140 && p.G < 140 && p.B < 140 && Math.Abs(p.R - p.G) < 14)
+                        {
+                            result.SetPixel(x, y, Color.FromArgb(0, 0, 0, 0));
+                            continue;
+                        }
+                    }
+
+                    // 2. Remove dark presentation background everywhere (including inside loops, chains, and split rings)
+                    if (p.R < 45 && p.G < 48 && p.B < 52)
+                    {
+                        result.SetPixel(x, y, Color.FromArgb(0, 0, 0, 0));
+                    }
+                    else
+                    {
+                        int brightness = Math.Max(p.R, Math.Max(p.G, p.B));
+                        if (brightness < 65)
+                        {
+                            int alpha = Math.Clamp((int)((brightness - 38) * 255.0 / 27.0), 0, 255);
+                            result.SetPixel(x, y, Color.FromArgb(alpha, p.R, p.G, p.B));
+                        }
+                        else
+                        {
+                            result.SetPixel(x, y, p);
+                        }
+                    }
+                }
+            }
+
+            return result;
         }
 
         private static Bitmap CreateRibbonOverlay(Bitmap ribbon, int iconWidth, int iconHeight)
@@ -206,6 +241,117 @@ namespace DesktopKeychainApp
                    name.Contains("badge");
         }
 
+        private static bool IsMustacheAccessory(string sourcePath)
+        {
+            string name = Path.GetFileName(sourcePath).ToLowerInvariant();
+            return name.Contains("mustache") || name.Contains("moustache");
+        }
+
+        private static Bitmap CreateMustacheOverlay(Bitmap source, int iconWidth, int iconHeight)
+        {
+            using Bitmap cleanedMustache = CleanMustacheAsset(source);
+
+            var composite = new Bitmap(iconWidth, iconHeight, PixelFormat.Format32bppPArgb);
+            using (Graphics graphics = Graphics.FromImage(composite))
+            {
+                graphics.CompositingMode = CompositingMode.SourceOver;
+                graphics.SmoothingMode = SmoothingMode.AntiAlias;
+                graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
+                graphics.Clear(Color.Transparent);
+
+                // 1. Extremely thin, subtle transparent protective layer around the exact icon-sized area
+                Rectangle casingRect = new Rectangle(1, 1, Math.Max(1, iconWidth - 2), Math.Max(1, iconHeight - 2));
+                int casingRadius = Math.Min(8, Math.Max(3, Math.Min(iconWidth, iconHeight) / 6));
+                using (GraphicsPath casingPath = CreateRoundedRectanglePath(casingRect, casingRadius))
+                using (var casingPen = new Pen(Color.FromArgb(60, 210, 235, 250), 1f))
+                using (var casingFill = new SolidBrush(Color.FromArgb(14, 255, 255, 255)))
+                {
+                    graphics.FillPath(casingFill, casingPath);
+                    graphics.DrawPath(casingPen, casingPath);
+                }
+
+                // 2. The real Windows desktop icon underneath serves as the file appearance in the sandwich.
+                // The 3D gloss moustache is positioned directly in the center of the icon space.
+                int mustacheWidth = Math.Max(1, (int)Math.Round(iconWidth * 0.78));
+                int mustacheHeight = Math.Max(1, (int)Math.Round(mustacheWidth * (double)cleanedMustache.Height / cleanedMustache.Width));
+                int mustacheX = (iconWidth - mustacheWidth) / 2;
+                int mustacheY = (iconHeight - mustacheHeight) / 2;
+
+                graphics.DrawImage(cleanedMustache,
+                    new Rectangle(mustacheX, mustacheY, mustacheWidth, mustacheHeight),
+                    0, 0, cleanedMustache.Width, cleanedMustache.Height,
+                    GraphicsUnit.Pixel);
+            }
+
+            return composite;
+        }
+
+        private static Bitmap CleanMustacheAsset(Bitmap source)
+        {
+            Rectangle region = new Rectangle(
+                (int)(source.Width * 0.20),
+                (int)(source.Height * 0.47),
+                (int)(source.Width * 0.60),
+                (int)(source.Height * 0.22));
+
+            using Bitmap crop = source.Clone(region, PixelFormat.Format32bppArgb);
+            int w = crop.Width;
+            int h = crop.Height;
+
+            Bitmap result = new Bitmap(w, h, PixelFormat.Format32bppArgb);
+
+            for (int y = 0; y < h; y++)
+            {
+                for (int x = 0; x < w; x++)
+                {
+                    Color p = crop.GetPixel(x, y);
+
+                    // On the curls / outer wings
+                    if (x < w * 0.28 || x > w * 0.72)
+                    {
+                        // Only black curl pixels belong to the mustache
+                        if (p.R < 48 && p.G < 48 && p.B < 48)
+                        {
+                            result.SetPixel(x, y, p);
+                        }
+                        else if (p.R < 65 && p.G < 65 && p.B < 65)
+                        {
+                            // Soft alpha blend at outer curl edge
+                            int alpha = Math.Clamp((int)((65 - Math.Max(p.R, Math.Max(p.G, p.B))) * 255.0 / 17.0), 0, 255);
+                            result.SetPixel(x, y, Color.FromArgb(alpha, p.R, p.G, p.B));
+                        }
+                        else
+                        {
+                            result.SetPixel(x, y, Color.FromArgb(0, 0, 0, 0));
+                        }
+                    }
+                    else
+                    {
+                        // Center lobes and bulbs
+                        // Background is white paper (R > 165 && G > 165 && B > 165)
+                        if (p.R > 165 && p.G > 165 && p.B > 165)
+                        {
+                            result.SetPixel(x, y, Color.FromArgb(0, 0, 0, 0));
+                        }
+                        else if (p.R > 135 && p.G > 135 && p.B > 135 && Math.Abs(p.R - p.G) < 15)
+                        {
+                            // Soft shadow on paper
+                            int alpha = Math.Clamp((int)((165 - p.R) * 255.0 / 30.0), 0, 255);
+                            result.SetPixel(x, y, Color.FromArgb(alpha, p.R, p.G, p.B));
+                        }
+                        else
+                        {
+                            // Mustache body + specular highlights on lobes
+                            result.SetPixel(x, y, p);
+                        }
+                    }
+                }
+            }
+
+            return result;
+        }
+
         private static bool IsRibbonAccessory(string sourcePath)
         {
             string name = Path.GetFileName(sourcePath).ToLowerInvariant();
@@ -241,14 +387,20 @@ namespace DesktopKeychainApp
             string name = Path.GetFileName(sourcePath).ToLowerInvariant();
             if (name.Contains("desktop_accessory_keychain") || name.Contains("desktop_icon_keychain"))
             {
-                return new Rectangle(source.Width * 55 / 100, source.Height * 12 / 100,
-                    source.Width * 45 / 100, source.Height * 88 / 100);
+                return new Rectangle(source.Width * 56 / 100, source.Height * 16 / 100,
+                    source.Width * 42 / 100, source.Height * 80 / 100);
             }
 
             if (name.Contains("transparent_silver_keychain"))
             {
-                return new Rectangle(source.Width * 55 / 100, source.Height * 10 / 100,
-                    source.Width * 45 / 100, source.Height * 90 / 100);
+                return new Rectangle(source.Width * 56 / 100, source.Height * 16 / 100,
+                    source.Width * 42 / 100, source.Height * 80 / 100);
+            }
+
+            if (name.Contains("crochet_flower"))
+            {
+                return new Rectangle(source.Width * 56 / 100, source.Height * 16 / 100,
+                    source.Width * 42 / 100, source.Height * 80 / 100);
             }
 
             if (name.Contains("pink_bow"))
@@ -257,16 +409,10 @@ namespace DesktopKeychainApp
                     source.Width * 60 / 100, source.Height * 55 / 100);
             }
 
-            if (name.Contains("mustache"))
+            if (name.Contains("mustache") || name.Contains("moustache"))
             {
                 return new Rectangle(source.Width * 18 / 100, source.Height * 43 / 100,
                     source.Width * 64 / 100, source.Height * 32 / 100);
-            }
-
-            if (name.Contains("crochet_flower"))
-            {
-                return new Rectangle(source.Width * 54 / 100, source.Height * 42 / 100,
-                    source.Width * 46 / 100, source.Height * 58 / 100);
             }
 
             throw new InvalidOperationException(

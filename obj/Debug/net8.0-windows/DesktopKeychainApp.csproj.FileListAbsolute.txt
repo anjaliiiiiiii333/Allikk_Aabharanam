@@ -50,7 +50,3 @@ D:\Users\Bijay\Downloads\Allikk_Aabharanam-master\bin\Debug\net8.0-windows\datas
 D:\Users\Bijay\Downloads\Allikk_Aabharanam-master\bin\Debug\net8.0-windows\datasets\accessories\assets\desktop_file_pink_bow_1788544179604.jpg
 D:\Users\Bijay\Downloads\Allikk_Aabharanam-master\bin\Debug\net8.0-windows\datasets\accessories\assets\desktop_icon_keychain.jpg
 D:\Users\Bijay\Downloads\Allikk_Aabharanam-master\bin\Debug\net8.0-windows\datasets\accessories\assets\transparent_silver_keychain_1788533082694.jpg
-D:\Users\Bijay\Downloads\Allikk_Aabharanam-master\obj\Debug\net8.0-windows\accessory_prototype\App.baml
-D:\Users\Bijay\Downloads\Allikk_Aabharanam-master\obj\Debug\net8.0-windows\accessory_prototype\PrototypeWindow.baml
-D:\Users\Bijay\Downloads\Allikk_Aabharanam-master\obj\Debug\net8.0-windows\accessory_prototype\App.g.cs
-D:\Users\Bijay\Downloads\Allikk_Aabharanam-master\obj\Debug\net8.0-windows\accessory_prototype\PrototypeWindow.g.cs

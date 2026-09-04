@@ -188,6 +188,9 @@ namespace DesktopKeychainApp
                 _currentTracker.ItemFound += Tracker_ItemFound;
                 _currentTracker.StartTracking();
 
+                // Switch desktop wallpaper to white
+                DesktopWallpaperManager.SetWhiteWallpaper();
+
                 UpdateStatus($"{accessory.AccessoryName} attached to '{selectedItem.Name}'. Tracking its position.");
                 AttachButton.IsEnabled = false;
                 DetachButton.IsEnabled = true;
@@ -232,6 +235,9 @@ namespace DesktopKeychainApp
                     _currentOverlay.Dispose();
                     _currentOverlay = null;
                 }
+
+                // Restore original desktop wallpaper
+                DesktopWallpaperManager.RestoreOriginalWallpaper();
 
                 UpdateStatus("Keychain detached. Ready to select another item.");
                 AttachButton.IsEnabled = true;

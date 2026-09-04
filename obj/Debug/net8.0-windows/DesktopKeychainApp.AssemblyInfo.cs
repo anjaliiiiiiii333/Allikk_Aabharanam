@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DesktopKeychainApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60c79930ed573eb1a3a5a47473ff75e605dc53ec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83c55a45fce7e097975b66922e95a23404ccd683")]
 [assembly: System.Reflection.AssemblyProductAttribute("DesktopKeychainApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DesktopKeychainApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
