@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DigitalAccessoriesAudiosDatasetSchema",
+  "description": "Validation schema for the sound effects and audio tracks dataset in the Allikk Aabharanam project.",
+  "type": "object",
+  "required": ["version", "last_updated", "total_items", "audios"],
+  "properties": {
+    "version": { "type": "string" },
+    "last_updated": { "type": "string" },
+    "total_items": { "type": "integer", "minimum": 0 },
+    "audios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "category",
+          "trigger_event",
+          "file_name",
+          "file_path",
+          "file_exists",
+          "format",
+          "duration_category",
+          "volume_default",
+          "playback_mode",
+          "pitch_randomness",
+          "cooldown_ms",
+          "tags",
+          "description"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+          "name": { "type": "string" },
+          "category": {
+            "type": "string",
+            "enum": [
+              "meme_sfx",
+              "physical_sfx",
+              "reaction_voice",
+              "musical_jingle",
+              "ambient_motion",
+              "ambient_bgm"
+            ]
+          },
+          "trigger_event": {
+            "type": "string",
+            "enum": [
+              "on_attach",
+              "on_detach",
+              "on_drag_start",
+              "on_drag_move",
+              "on_drag_release",
+              "on_interact",
+              "on_idle",
+              "on_error"
+            ]
+          },
+          "file_name": { "type": "string" },
+          "file_path": { "type": "string" },
+          "file_exists": { "type": "boolean" },
+          "format": { "type": "string", "enum": ["mp3", "wav", "ogg"] },
+          "file_size_bytes": { "type": "integer", "minimum": 0 },
+          "duration_category": {
+            "type": "string",
+            "enum": ["instant", "short", "medium", "long"]
+          },
+          "volume_default": {
+            "type": "number",
+            "minimum": 0.0,
+            "maximum": 1.0
+          },
+          "playback_mode": {
+            "type": "string",
+            "enum": ["one_shot", "loop_while_drag", "stochastic"]
+          },
+          "pitch_randomness": {
+            "type": "number",
+            "minimum": 0.0,
+            "maximum": 0.5
+          },
+          "cooldown_ms": { "type": "integer", "minimum": 0 },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "compatible_accessories": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "description": { "type": "string" }
+        }
+      }
+    }
+  }
+}

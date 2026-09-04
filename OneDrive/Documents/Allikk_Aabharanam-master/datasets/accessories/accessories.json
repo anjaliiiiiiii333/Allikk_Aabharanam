@@ -1,0 +1,1548 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-09-04",
+  "total_items": 35,
+  "description": "Comprehensive Digital Accessories Dataset for desktop files, folders, and application shortcuts.",
+  "accessories": [
+    {
+      "id": "pastel_pufferfish_keychain",
+      "name": "Pastel Pufferfish Keychain",
+      "category": "keychain",
+      "subcategory": "beaded_strand",
+      "theme": "pastel_kawaii",
+      "description": "Signature accessory. A delicate 3D iridescent pastel pufferfish charm dangling from an S-curved strand of alternating lavender, pink, and mint pearls attached via a gold lobster clasp.",
+      "materials": ["acrylic_resin", "glass_pearls", "gold_plated_zinc"],
+      "palette": {
+        "primary": "#E0C3FC",
+        "secondary": "#FFD1DC",
+        "accent": "#BFFCC6",
+        "finish": "pearlescent"
+      },
+      "dimensions": {
+        "width_px": 54,
+        "height_px": 136,
+        "aspect_ratio": "1:2.5"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 18,
+        "offset_y": -4,
+        "hole_required": true
+      },
+      "physics": {
+        "weight_g": 18.5,
+        "damping": 0.82,
+        "stiffness": 0.35,
+        "gravity_scale": 1.0,
+        "max_swing_deg": 42.0
+      },
+      "compatible_targets": ["file", "document", "pdf", "image", "folder", "shortcut"],
+      "rarity": "rare",
+      "sound_mappings": {
+        "on_attach": "sfx_clasp_lock",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_bead_clink_gentle",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_bubble_pop"
+      },
+      "asset_status": "ready",
+      "asset_path": "assets/desktop_accessory_keychain.jpg"
+    },
+    {
+      "id": "goldfish_ball_chain",
+      "name": "Golden Fish Ball Chain",
+      "category": "keychain",
+      "subcategory": "metal_link",
+      "theme": "classic_gold",
+      "description": "A charming golden goldfish pendant hanging from a warm metallic ball-chain loop with a round split ring.",
+      "materials": ["brass", "enamel", "gold_plate"],
+      "palette": {
+        "primary": "#FFA500",
+        "secondary": "#FFD700",
+        "accent": "#FF8C00",
+        "finish": "metallic_gold"
+      },
+      "dimensions": {
+        "width_px": 48,
+        "height_px": 120,
+        "aspect_ratio": "1:2.5"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 16,
+        "offset_y": -2,
+        "hole_required": true
+      },
+      "physics": {
+        "weight_g": 22.0,
+        "damping": 0.78,
+        "stiffness": 0.40,
+        "gravity_scale": 1.1,
+        "max_swing_deg": 38.0
+      },
+      "compatible_targets": ["file", "folder", "shortcut", "archive"],
+      "rarity": "uncommon",
+      "sound_mappings": {
+        "on_attach": "sfx_clasp_lock",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_bead_clink_gentle",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_bubble_pop"
+      },
+      "asset_status": "in_design",
+      "asset_path": "assets/goldfish_ball_chain.png"
+    },
+    {
+      "id": "pink_pufferfish_loop",
+      "name": "Pink Pufferfish Beaded Loop",
+      "category": "keychain",
+      "subcategory": "loop_chain",
+      "theme": "pastel_kawaii",
+      "description": "A round blushing pink pufferfish charm framed within an oval loop of soft pink pearl beads with a gold trigger snap hook.",
+      "materials": ["acrylic", "synthetic_pearls", "gold_plated_alloy"],
+      "palette": {
+        "primary": "#FFB7C5",
+        "secondary": "#FFE4E1",
+        "accent": "#FF69B4",
+        "finish": "glossy"
+      },
+      "dimensions": {
+        "width_px": 56,
+        "height_px": 128,
+        "aspect_ratio": "1:2.3"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 18,
+        "offset_y": -4,
+        "hole_required": true
+      },
+      "physics": {
+        "weight_g": 19.0,
+        "damping": 0.80,
+        "stiffness": 0.45,
+        "gravity_scale": 1.0,
+        "max_swing_deg": 36.0
+      },
+      "compatible_targets": ["file", "folder", "shortcut", "image"],
+      "rarity": "uncommon",
+      "sound_mappings": {
+        "on_attach": "sfx_clasp_lock",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_bead_clink_gentle",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_bubble_pop"
+      },
+      "asset_status": "in_design",
+      "asset_path": "assets/pink_pufferfish_loop.png"
+    },
+    {
+      "id": "blue_pufferfish_loop",
+      "name": "Ocean Blue Pufferfish Loop",
+      "category": "keychain",
+      "subcategory": "loop_chain",
+      "theme": "aquatic",
+      "description": "A cool ocean-blue pufferfish charm with baby-blue pearl beads in an elliptical ring arrangement with golden hardware.",
+      "materials": ["acrylic", "glass_pearls", "gold_plated_alloy"],
+      "palette": {
+        "primary": "#89CFF0",
+        "secondary": "#B0E0E6",
+        "accent": "#4682B4",
+        "finish": "glossy"
+      },
+      "dimensions": {
+        "width_px": 54,
+        "height_px": 128,
+        "aspect_ratio": "1:2.35"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 18,
+        "offset_y": -4,
+        "hole_required": true
+      },
+      "physics": {
+        "weight_g": 19.2,
+        "damping": 0.81,
+        "stiffness": 0.44,
+        "gravity_scale": 1.0,
+        "max_swing_deg": 35.0
+      },
+      "compatible_targets": ["file", "folder", "shortcut", "code"],
+      "rarity": "uncommon",
+      "sound_mappings": {
+        "on_attach": "sfx_clasp_lock",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_bead_clink_gentle",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_bubble_pop"
+      },
+      "asset_status": "in_design",
+      "asset_path": "assets/blue_pufferfish_loop.png"
+    },
+    {
+      "id": "classic_pearl_strand",
+      "name": "Classic Iridescent Pearl Strand",
+      "category": "charm",
+      "subcategory": "beaded_strand",
+      "theme": "vintage_gold",
+      "description": "An elegant strand of uniformly graduated luminous white pearls terminating in a tiny golden teardrop pendant.",
+      "materials": ["cultured_pearl_simulant", "silk_cord", "14k_gold_plated_brass"],
+      "palette": {
+        "primary": "#FDFBF7",
+        "secondary": "#EAE6DF",
+        "accent": "#D4AF37",
+        "finish": "pearlescent"
+      },
+      "dimensions": {
+        "width_px": 32,
+        "height_px": 140,
+        "aspect_ratio": "1:4.3"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 14,
+        "offset_y": -2,
+        "hole_required": true
+      },
+      "physics": {
+        "weight_g": 15.0,
+        "damping": 0.88,
+        "stiffness": 0.25,
+        "gravity_scale": 0.95,
+        "max_swing_deg": 48.0
+      },
+      "compatible_targets": ["file", "document", "text"],
+      "rarity": "rare",
+      "sound_mappings": {
+        "on_attach": "sfx_clasp_lock",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_bead_clink_gentle",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_bead_clink_gentle"
+      },
+      "asset_status": "in_design",
+      "asset_path": "assets/classic_pearl_strand.png"
+    },
+    {
+      "id": "shiba_paw_charm",
+      "name": "Shiba Inu Paw Bead Strap",
+      "category": "strap",
+      "subcategory": "beaded_strand",
+      "theme": "pastel_kawaii",
+      "description": "An adorable squishy silicone Shiba Inu paw pad with milky cream and peach beads, attached by a durable braided cord loop.",
+      "materials": ["soft_silicone", "acrylic_beads", "nylon_cord"],
+      "palette": {
+        "primary": "#F4A460",
+        "secondary": "#FFDAB9",
+        "accent": "#FF6B81",
+        "finish": "matte"
+      },
+      "dimensions": {
+        "width_px": 44,
+        "height_px": 130,
+        "aspect_ratio": "1:2.9"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 16,
+        "offset_y": -3,
+        "hole_required": true
+      },
+      "physics": {
+        "weight_g": 14.2,
+        "damping": 0.84,
+        "stiffness": 0.38,
+        "gravity_scale": 1.0,
+        "max_swing_deg": 40.0
+      },
+      "compatible_targets": ["file", "folder", "shortcut", "media"],
+      "rarity": "common",
+      "sound_mappings": {
+        "on_attach": "sfx_aww_reaction",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_bead_clink_gentle",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_rubber_squeak"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/shiba_paw_charm.png"
+    },
+    {
+      "id": "lucky_maneki_neko",
+      "name": "Lucky Maneki-Neko Charm",
+      "category": "charm",
+      "subcategory": "metal_link",
+      "theme": "oriental_traditional",
+      "description": "A traditional Japanese beckoning porcelain cat with a raised golden paw, red braided knot, and a functional tiny brass bell.",
+      "materials": ["ceramic", "braided_silk", "brass"],
+      "palette": {
+        "primary": "#FFFFFF",
+        "secondary": "#E74C3C",
+        "accent": "#F1C40F",
+        "finish": "glossy"
+      },
+      "dimensions": {
+        "width_px": 42,
+        "height_px": 124,
+        "aspect_ratio": "1:2.95"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 15,
+        "offset_y": -3,
+        "hole_required": true
+      },
+      "physics": {
+        "weight_g": 24.5,
+        "damping": 0.76,
+        "stiffness": 0.48,
+        "gravity_scale": 1.15,
+        "max_swing_deg": 34.0
+      },
+      "compatible_targets": ["file", "folder", "shortcut"],
+      "rarity": "rare",
+      "sound_mappings": {
+        "on_attach": "sfx_bell_jingle",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_bell_jingle",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_bell_jingle"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/lucky_maneki_neko.png"
+    },
+    {
+      "id": "tiny_brass_jingle_bell",
+      "name": "Vintage Brass Jingle Bell",
+      "category": "bell",
+      "subcategory": "metal_link",
+      "theme": "vintage_gold",
+      "description": "A miniature acoustic brass sleigh bell that rings with a cheerful metallic chime whenever the desktop icon moves.",
+      "materials": ["solid_brass", "steel_ball"],
+      "palette": {
+        "primary": "#DAA520",
+        "secondary": "#B8860B",
+        "accent": "#FFF8DC",
+        "finish": "metallic_gold"
+      },
+      "dimensions": {
+        "width_px": 36,
+        "height_px": 80,
+        "aspect_ratio": "1:2.2"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 12,
+        "offset_y": -2,
+        "hole_required": true
+      },
+      "physics": {
+        "weight_g": 28.0,
+        "damping": 0.72,
+        "stiffness": 0.60,
+        "gravity_scale": 1.25,
+        "max_swing_deg": 30.0
+      },
+      "compatible_targets": ["all"],
+      "rarity": "common",
+      "sound_mappings": {
+        "on_attach": "sfx_bell_jingle",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_bell_jingle",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_bell_jingle"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/tiny_brass_jingle_bell.png"
+    },
+    {
+      "id": "pixel_heart_charm",
+      "name": "8-Bit Pixel Heart Pendant",
+      "category": "charm",
+      "subcategory": "metal_link",
+      "theme": "retro_pixel",
+      "description": "A chunky retro gaming 8-bit red pixel heart made of layered acrylic hanging from an aluminum link chain.",
+      "materials": ["laser_cut_acrylic", "aluminum_chain"],
+      "palette": {
+        "primary": "#FF0044",
+        "secondary": "#880022",
+        "accent": "#FFFFFF",
+        "finish": "matte"
+      },
+      "dimensions": {
+        "width_px": 46,
+        "height_px": 110,
+        "aspect_ratio": "1:2.4"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 16,
+        "offset_y": -3,
+        "hole_required": true
+      },
+      "physics": {
+        "weight_g": 12.0,
+        "damping": 0.85,
+        "stiffness": 0.42,
+        "gravity_scale": 0.9,
+        "max_swing_deg": 44.0
+      },
+      "compatible_targets": ["file", "shortcut", "executable", "game"],
+      "rarity": "uncommon",
+      "sound_mappings": {
+        "on_attach": "sfx_pixel_powerup",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_bead_clink_gentle",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_pixel_powerup"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/pixel_heart_charm.png"
+    },
+    {
+      "id": "squeaky_yellow_duck",
+      "name": "Squeaky Rubber Duck Charm",
+      "category": "keychain",
+      "subcategory": "metal_link",
+      "theme": "meme",
+      "description": "A miniature bright yellow rubber duck with an orange beak. Guaranteed to increase software debugging performance.",
+      "materials": ["soft_vinyl", "brass_clasp"],
+      "palette": {
+        "primary": "#FFD700",
+        "secondary": "#FF4500",
+        "accent": "#111111",
+        "finish": "glossy"
+      },
+      "dimensions": {
+        "width_px": 50,
+        "height_px": 115,
+        "aspect_ratio": "1:2.3"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 18,
+        "offset_y": -3,
+        "hole_required": true
+      },
+      "physics": {
+        "weight_g": 16.0,
+        "damping": 0.80,
+        "stiffness": 0.35,
+        "gravity_scale": 1.0,
+        "max_swing_deg": 40.0
+      },
+      "compatible_targets": ["file", "code", "script", "folder"],
+      "rarity": "uncommon",
+      "sound_mappings": {
+        "on_attach": "sfx_rubber_squeak",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_bead_clink_gentle",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_rubber_squeak"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/squeaky_yellow_duck.png"
+    },
+    {
+      "id": "mini_swiss_army_knife",
+      "name": "Pocket Swiss Army Knife Keychain",
+      "category": "keychain",
+      "subcategory": "metal_link",
+      "theme": "useless_gadget",
+      "description": "A completely non-functional miniature red Swiss pocket knife with a plastic toothpick and silver metal loop. The quintessential TinkerHub useless project accessory.",
+      "materials": ["abs_plastic", "stainless_steel"],
+      "palette": {
+        "primary": "#D32F2F",
+        "secondary": "#FFFFFF",
+        "accent": "#C0C0C0",
+        "finish": "glossy"
+      },
+      "dimensions": {
+        "width_px": 38,
+        "height_px": 125,
+        "aspect_ratio": "1:3.3"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 16,
+        "offset_y": -4,
+        "hole_required": true
+      },
+      "physics": {
+        "weight_g": 26.0,
+        "damping": 0.74,
+        "stiffness": 0.50,
+        "gravity_scale": 1.2,
+        "max_swing_deg": 32.0
+      },
+      "compatible_targets": ["file", "executable", "archive", "folder"],
+      "rarity": "rare",
+      "sound_mappings": {
+        "on_attach": "sfx_clasp_lock",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_bead_clink_gentle",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "meme_oh_hell_na"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/mini_swiss_army_knife.png"
+    },
+    {
+      "id": "disco_crystal_ball",
+      "name": "Faceted Disco Crystal Ball",
+      "category": "charm",
+      "subcategory": "beaded_strand",
+      "theme": "y2k",
+      "description": "A sparkling mini disco ball crafted from dozens of micro mirrored glass tiles reflecting holographic sparkles onto the desktop.",
+      "materials": ["mirror_glass", "foam_core", "silver_plated_chain"],
+      "palette": {
+        "primary": "#E0E0E0",
+        "secondary": "#FFFFFF",
+        "accent": "#A0E0FF",
+        "finish": "glitter"
+      },
+      "dimensions": {
+        "width_px": 44,
+        "height_px": 118,
+        "aspect_ratio": "1:2.7"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 16,
+        "offset_y": -2,
+        "hole_required": true
+      },
+      "physics": {
+        "weight_g": 20.5,
+        "damping": 0.79,
+        "stiffness": 0.40,
+        "gravity_scale": 1.05,
+        "max_swing_deg": 38.0
+      },
+      "compatible_targets": ["music", "audio", "video", "shortcut"],
+      "rarity": "epic",
+      "sound_mappings": {
+        "on_attach": "bgm_audio_theme",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_bead_clink_gentle",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "bgm_audio_theme"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/disco_crystal_ball.png"
+    },
+    {
+      "id": "sakura_cherry_blossom",
+      "name": "Sakura Blossom Enamel Pendant",
+      "category": "charm",
+      "subcategory": "beaded_strand",
+      "theme": "pastel_kawaii",
+      "description": "A translucent pink Japanese cherry blossom flower with golden stamens and a drop pearl bead.",
+      "materials": ["hard_enamel", "rose_gold_plating", "freshwater_pearl"],
+      "palette": {
+        "primary": "#FFB7C5",
+        "secondary": "#FFF0F5",
+        "accent": "#B76E79",
+        "finish": "glossy"
+      },
+      "dimensions": {
+        "width_px": 42,
+        "height_px": 122,
+        "aspect_ratio": "1:2.9"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 15,
+        "offset_y": -3,
+        "hole_required": true
+      },
+      "physics": {
+        "weight_g": 16.5,
+        "damping": 0.83,
+        "stiffness": 0.36,
+        "gravity_scale": 1.0,
+        "max_swing_deg": 41.0
+      },
+      "compatible_targets": ["file", "document", "image", "folder"],
+      "rarity": "rare",
+      "sound_mappings": {
+        "on_attach": "sfx_magic_sparkle",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_bead_clink_gentle",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_magic_sparkle"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/sakura_cherry_blossom.png"
+    },
+    {
+      "id": "goth_skull_chain",
+      "name": "Gothic Chrome Skull Chain",
+      "category": "keychain",
+      "subcategory": "metal_link",
+      "theme": "gothic",
+      "description": "An edgy polished gunmetal skull charm hanging from a heavy curb chain link with cross motifs.",
+      "materials": ["pewter", "gunmetal_chain", "black_enamel"],
+      "palette": {
+        "primary": "#2C3E50",
+        "secondary": "#1A1A1A",
+        "accent": "#BDC3C7",
+        "finish": "metallic_silver"
+      },
+      "dimensions": {
+        "width_px": 40,
+        "height_px": 130,
+        "aspect_ratio": "1:3.25"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 16,
+        "offset_y": -4,
+        "hole_required": true
+      },
+      "physics": {
+        "weight_g": 31.0,
+        "damping": 0.70,
+        "stiffness": 0.55,
+        "gravity_scale": 1.3,
+        "max_swing_deg": 28.0
+      },
+      "compatible_targets": ["file", "archive", "code", "executable"],
+      "rarity": "uncommon",
+      "sound_mappings": {
+        "on_attach": "meme_scary_music",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_bead_clink_energetic",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "meme_scary_music"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/goth_skull_chain.png"
+    },
+    {
+      "id": "silver_chrome_charm_cluster",
+      "name": "Silver Chrome Charm Cluster Keychain",
+      "category": "keychain",
+      "subcategory": "ball_chain",
+      "theme": "chrome_y2k",
+      "description": "High-shine metallic silver ball chain attached to the desktop file casing top-right hook, terminating in a silver split ring dangling 6 chrome charms: puffy heart, diamond prism, mini chain drop, capsule pill, sword dagger, and 3D star.",
+      "materials": ["sterling_silver_plate", "chrome_alloy", "polished_steel"],
+      "palette": {
+        "primary": "#E8E8E8",
+        "secondary": "#B8B8B8",
+        "accent": "#FFFFFF",
+        "finish": "metallic_silver"
+      },
+      "dimensions": {
+        "width_px": 58,
+        "height_px": 142,
+        "aspect_ratio": "1:2.45"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 18,
+        "offset_y": -4,
+        "hole_required": true
+      },
+      "physics": {
+        "weight_g": 34.0,
+        "damping": 0.72,
+        "stiffness": 0.45,
+        "gravity_scale": 1.25,
+        "max_swing_deg": 32.0
+      },
+      "compatible_targets": ["file", "document", "folder", "shortcut", "archive"],
+      "rarity": "rare",
+      "sound_mappings": {
+        "on_attach": "sfx_clasp_lock",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_bead_clink_energetic",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_bead_clink_energetic"
+      },
+      "asset_status": "ready",
+      "asset_path": "assets/silver_keychain_file.jpg"
+    },
+    {
+      "id": "crocheted_floral_bouquet_charm",
+      "name": "Crocheted Floral Bouquet Keychain",
+      "category": "keychain",
+      "subcategory": "yarn_crochet",
+      "theme": "cottagecore_handmade",
+      "description": "Handcrafted yarn crochet flower bouquet charm featuring a pink spiral rose, vibrant teal flower, white daisy with yellow center, soft purple flower, and green leaves, suspended from a silver split ring with metallic clasp and pearl/silver chain options.",
+      "materials": ["wool_yarn", "cotton_thread", "chrome_plated_steel", "synthetic_pearls"],
+      "palette": {
+        "primary": "#FF69B4",
+        "secondary": "#008080",
+        "accent": "#FFFFFF",
+        "finish": "matte"
+      },
+      "dimensions": {
+        "width_px": 62,
+        "height_px": 138,
+        "aspect_ratio": "1:2.2"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 18,
+        "offset_y": -4,
+        "hole_required": true
+      },
+      "physics": {
+        "weight_g": 21.0,
+        "damping": 0.86,
+        "stiffness": 0.40,
+        "gravity_scale": 1.0,
+        "max_swing_deg": 38.0
+      },
+      "compatible_targets": ["file", "document", "image", "folder", "shortcut"],
+      "rarity": "rare",
+      "sound_mappings": {
+        "on_attach": "sfx_aww_reaction",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_bead_clink_gentle",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_aww_reaction"
+      },
+      "asset_status": "ready",
+      "asset_path": "assets/crochet_flower_keychain.jpg"
+    },
+    {
+      "id": "cyber_glow_keycard",
+      "name": "Cyberpunk Access Keycard Strap",
+      "category": "strap",
+      "subcategory": "fabric_ribbon",
+      "theme": "cyberpunk",
+      "description": "A high-tech translucent polycarbonate lanyard with glowing neon cyan typography and a magnetic security chip charm.",
+      "materials": ["tpu_strap", "acrylic_chip", "matte_black_carabiner"],
+      "palette": {
+        "primary": "#00F0FF",
+        "secondary": "#FF003C",
+        "accent": "#121212",
+        "finish": "fluorescent"
+      },
+      "dimensions": {
+        "width_px": 34,
+        "height_px": 145,
+        "aspect_ratio": "1:4.2"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 14,
+        "offset_y": -3,
+        "hole_required": true
+      },
+      "physics": {
+        "weight_g": 13.5,
+        "damping": 0.86,
+        "stiffness": 0.32,
+        "gravity_scale": 0.95,
+        "max_swing_deg": 46.0
+      },
+      "compatible_targets": ["code", "executable", "shortcut", "script"],
+      "rarity": "epic",
+      "sound_mappings": {
+        "on_attach": "sfx_clasp_lock",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_swift_whoosh",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_pixel_powerup"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/cyber_glow_keycard.png"
+    },
+    {
+      "id": "party_birthday_hat",
+      "name": "Celebration Party Hat",
+      "category": "hat",
+      "subcategory": "headwear",
+      "theme": "festive",
+      "description": "A cheerful striped party cone hat with a fluffy yellow pom-pom perched right on top of the desktop file icon.",
+      "materials": ["cardstock_simulant", "felt_pom_pom", "elastic_band"],
+      "palette": {
+        "primary": "#FF3366",
+        "secondary": "#33CCFF",
+        "accent": "#FFCC00",
+        "finish": "matte"
+      },
+      "dimensions": {
+        "width_px": 48,
+        "height_px": 44,
+        "aspect_ratio": "1:0.9"
+      },
+      "anchor": {
+        "type": "head_perch",
+        "offset_x": 0,
+        "offset_y": -22,
+        "hole_required": false
+      },
+      "physics": {
+        "weight_g": 5.0,
+        "damping": 0.92,
+        "stiffness": 0.70,
+        "gravity_scale": 0.6,
+        "max_swing_deg": 15.0
+      },
+      "compatible_targets": ["all"],
+      "rarity": "common",
+      "sound_mappings": {
+        "on_attach": "sfx_party_horn",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_swift_whoosh",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_party_horn"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/party_birthday_hat.png"
+    },
+    {
+      "id": "mini_top_hat_monocle",
+      "name": "Gentleman's Top Hat & Monocle",
+      "category": "hat",
+      "subcategory": "headwear",
+      "theme": "vintage_victorian",
+      "description": "A distinguished black silk top hat tilted at a jaunty angle, accompanied by a dangling brass monocle on a fine chain.",
+      "materials": ["velvet_felt", "brass_wire", "magnifying_glass"],
+      "palette": {
+        "primary": "#1A1A1A",
+        "secondary": "#8B0000",
+        "accent": "#DAA520",
+        "finish": "matte"
+      },
+      "dimensions": {
+        "width_px": 62,
+        "height_px": 52,
+        "aspect_ratio": "1:0.84"
+      },
+      "anchor": {
+        "type": "head_perch",
+        "offset_x": -4,
+        "offset_y": -26,
+        "hole_required": false
+      },
+      "physics": {
+        "weight_g": 9.0,
+        "damping": 0.88,
+        "stiffness": 0.65,
+        "gravity_scale": 0.8,
+        "max_swing_deg": 18.0
+      },
+      "compatible_targets": ["document", "pdf", "text", "folder"],
+      "rarity": "rare",
+      "sound_mappings": {
+        "on_attach": "sfx_clasp_lock",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_swift_whoosh",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "meme_omg"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/mini_top_hat_monocle.png"
+    },
+    {
+      "id": "detective_magnifier_hat",
+      "name": "Detective Deerstalker Cap",
+      "category": "hat",
+      "subcategory": "headwear",
+      "theme": "mystery",
+      "description": "A classic houndstooth patterned Sherlock Holmes cap with dual visors and tied earflaps. Perfect for tracking down lost files.",
+      "materials": ["tweed_wool", "ribbon_tie"],
+      "palette": {
+        "primary": "#8B7355",
+        "secondary": "#4A3C31",
+        "accent": "#D2B48C",
+        "finish": "matte"
+      },
+      "dimensions": {
+        "width_px": 68,
+        "height_px": 38,
+        "aspect_ratio": "1:0.56"
+      },
+      "anchor": {
+        "type": "head_perch",
+        "offset_x": 0,
+        "offset_y": -18,
+        "hole_required": false
+      },
+      "physics": {
+        "weight_g": 7.5,
+        "damping": 0.90,
+        "stiffness": 0.68,
+        "gravity_scale": 0.7,
+        "max_swing_deg": 16.0
+      },
+      "compatible_targets": ["folder", "search", "document"],
+      "rarity": "uncommon",
+      "sound_mappings": {
+        "on_attach": "sfx_clasp_lock",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_swift_whoosh",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "meme_omg"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/detective_magnifier_hat.png"
+    },
+    {
+      "id": "cozy_winter_beanie",
+      "name": "Cozy Knitted Pom-Pom Beanie",
+      "category": "hat",
+      "subcategory": "headwear",
+      "theme": "cozy",
+      "description": "A thick ribbed cable-knit winter beanie in soft teal with a fluffy oversized white pom-pom.",
+      "materials": ["chunky_wool", "acrylic_fleece"],
+      "palette": {
+        "primary": "#48D1CC",
+        "secondary": "#FFFFFF",
+        "accent": "#20B2AA",
+        "finish": "matte"
+      },
+      "dimensions": {
+        "width_px": 58,
+        "height_px": 48,
+        "aspect_ratio": "1:0.82"
+      },
+      "anchor": {
+        "type": "head_perch",
+        "offset_x": 0,
+        "offset_y": -24,
+        "hole_required": false
+      },
+      "physics": {
+        "weight_g": 8.2,
+        "damping": 0.89,
+        "stiffness": 0.62,
+        "gravity_scale": 0.75,
+        "max_swing_deg": 20.0
+      },
+      "compatible_targets": ["all"],
+      "rarity": "common",
+      "sound_mappings": {
+        "on_attach": "sfx_aww_reaction",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_swift_whoosh",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_aww_reaction"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/cozy_winter_beanie.png"
+    },
+    {
+      "id": "cowboy_stetson_hat",
+      "name": "Wild West Cowboy Stetson",
+      "category": "hat",
+      "subcategory": "headwear",
+      "theme": "western",
+      "description": "A miniature brown leather cowboy hat with a curved brim and a tiny silver sheriff star pinned to the band.",
+      "materials": ["molded_felt", "embossed_leather", "silver_pin"],
+      "palette": {
+        "primary": "#A0522D",
+        "secondary": "#5C2E0B",
+        "accent": "#C0C0C0",
+        "finish": "matte"
+      },
+      "dimensions": {
+        "width_px": 72,
+        "height_px": 40,
+        "aspect_ratio": "1:0.55"
+      },
+      "anchor": {
+        "type": "head_perch",
+        "offset_x": 0,
+        "offset_y": -20,
+        "hole_required": false
+      },
+      "physics": {
+        "weight_g": 9.5,
+        "damping": 0.87,
+        "stiffness": 0.66,
+        "gravity_scale": 0.8,
+        "max_swing_deg": 18.0
+      },
+      "compatible_targets": ["folder", "executable", "shortcut"],
+      "rarity": "uncommon",
+      "sound_mappings": {
+        "on_attach": "sfx_clasp_lock",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_swift_whoosh",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "meme_oh_hell_na"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/cowboy_stetson_hat.png"
+    },
+    {
+      "id": "chef_toque_hat",
+      "name": "Crisp White Chef Toque",
+      "category": "hat",
+      "subcategory": "headwear",
+      "theme": "culinary",
+      "description": "A tall pleated baker and chef hat that billows slightly as your file icon speeds across the desktop.",
+      "materials": ["starched_cotton", "paper_stiffener"],
+      "palette": {
+        "primary": "#FFFFFF",
+        "secondary": "#F0F0F0",
+        "accent": "#CCCCCC",
+        "finish": "matte"
+      },
+      "dimensions": {
+        "width_px": 52,
+        "height_px": 56,
+        "aspect_ratio": "1:1.07"
+      },
+      "anchor": {
+        "type": "head_perch",
+        "offset_x": 0,
+        "offset_y": -28,
+        "hole_required": false
+      },
+      "physics": {
+        "weight_g": 6.0,
+        "damping": 0.91,
+        "stiffness": 0.64,
+        "gravity_scale": 0.65,
+        "max_swing_deg": 22.0
+      },
+      "compatible_targets": ["file", "document", "folder"],
+      "rarity": "common",
+      "sound_mappings": {
+        "on_attach": "sfx_clasp_lock",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_swift_whoosh",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "meme_omg"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/chef_toque_hat.png"
+    },
+    {
+      "id": "wizard_pointy_hat",
+      "name": "Sorcerer's Starlight Wizard Hat",
+      "category": "hat",
+      "subcategory": "headwear",
+      "theme": "fantasy_magic",
+      "description": "A crooked deep violet wizard hat embroidered with shimmering golden crescent moons and glowing constellations.",
+      "materials": ["velvet", "gold_metallic_thread", "internal_wire"],
+      "palette": {
+        "primary": "#4B0082",
+        "secondary": "#7B1FA2",
+        "accent": "#FFD700",
+        "finish": "glitter"
+      },
+      "dimensions": {
+        "width_px": 64,
+        "height_px": 62,
+        "aspect_ratio": "1:0.97"
+      },
+      "anchor": {
+        "type": "head_perch",
+        "offset_x": 2,
+        "offset_y": -32,
+        "hole_required": false
+      },
+      "physics": {
+        "weight_g": 7.8,
+        "damping": 0.89,
+        "stiffness": 0.60,
+        "gravity_scale": 0.7,
+        "max_swing_deg": 24.0
+      },
+      "compatible_targets": ["code", "script", "executable", "shortcut"],
+      "rarity": "legendary",
+      "sound_mappings": {
+        "on_attach": "sfx_magic_sparkle",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_swift_whoosh",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_magic_sparkle"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/wizard_pointy_hat.png"
+    },
+    {
+      "id": "classic_red_gift_bow",
+      "name": "Satin Red Gift Wrap Bow",
+      "category": "bow",
+      "subcategory": "fabric_ribbon",
+      "theme": "festive",
+      "description": "A glossy lush crimson satin ribbon bow tied with symmetrical loops, decorating the corner of the desktop casing.",
+      "materials": ["satin_polyester", "adhesive_backing"],
+      "palette": {
+        "primary": "#E50914",
+        "secondary": "#B20710",
+        "accent": "#FF6B6B",
+        "finish": "glossy"
+      },
+      "dimensions": {
+        "width_px": 44,
+        "height_px": 42,
+        "aspect_ratio": "1:0.95"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 4,
+        "offset_y": -4,
+        "hole_required": false
+      },
+      "physics": {
+        "weight_g": 3.5,
+        "damping": 0.94,
+        "stiffness": 0.80,
+        "gravity_scale": 0.5,
+        "max_swing_deg": 12.0
+      },
+      "compatible_targets": ["all"],
+      "rarity": "common",
+      "sound_mappings": {
+        "on_attach": "sfx_aww_reaction",
+        "on_detach": "sfx_tape_peel",
+        "on_drag_move": "sfx_swift_whoosh",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_aww_reaction"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/classic_red_gift_bow.png"
+    },
+    {
+      "id": "coquette_pink_ribbon",
+      "name": "Balletcore Coquette Lace Bow",
+      "category": "bow",
+      "subcategory": "fabric_ribbon",
+      "theme": "pastel_kawaii",
+      "description": "An ultra-cute baby-pink organza ribbon bow with scalloped sheer edges and flowing trailing tails that sway in the desktop breeze.",
+      "materials": ["sheer_organza", "lace_trim"],
+      "palette": {
+        "primary": "#FFD1DC",
+        "secondary": "#FFF0F5",
+        "accent": "#FFB6C1",
+        "finish": "pearlescent"
+      },
+      "dimensions": {
+        "width_px": 50,
+        "height_px": 75,
+        "aspect_ratio": "1:1.5"
+      },
+      "anchor": {
+        "type": "center_pin",
+        "offset_x": 0,
+        "offset_y": 16,
+        "hole_required": false
+      },
+      "physics": {
+        "weight_g": 2.8,
+        "damping": 0.95,
+        "stiffness": 0.40,
+        "gravity_scale": 0.4,
+        "max_swing_deg": 50.0
+      },
+      "compatible_targets": ["file", "document", "image", "folder"],
+      "rarity": "uncommon",
+      "sound_mappings": {
+        "on_attach": "sfx_aww_reaction",
+        "on_detach": "sfx_tape_peel",
+        "on_drag_move": "sfx_swift_whoosh",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_aww_reaction"
+      },
+      "asset_status": "ready",
+      "asset_path": "assets/desktop_file_pink_bow.jpg"
+    },
+    {
+      "id": "black_velvet_bow",
+      "name": "Gothic Noir Velvet Bow",
+      "category": "bow",
+      "subcategory": "fabric_ribbon",
+      "theme": "gothic",
+      "description": "A midnight-black velvet ribbon bow adorned with a tiny silver cameo skull brooch pinned at its knot center.",
+      "materials": ["plush_velvet", "silver_alloy_brooch"],
+      "palette": {
+        "primary": "#0F0F0F",
+        "secondary": "#262626",
+        "accent": "#E0E0E0",
+        "finish": "matte"
+      },
+      "dimensions": {
+        "width_px": 48,
+        "height_px": 60,
+        "aspect_ratio": "1:1.25"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 5,
+        "offset_y": -3,
+        "hole_required": false
+      },
+      "physics": {
+        "weight_g": 5.2,
+        "damping": 0.90,
+        "stiffness": 0.55,
+        "gravity_scale": 0.6,
+        "max_swing_deg": 25.0
+      },
+      "compatible_targets": ["all"],
+      "rarity": "rare",
+      "sound_mappings": {
+        "on_attach": "sfx_clasp_lock",
+        "on_detach": "sfx_tape_peel",
+        "on_drag_move": "sfx_swift_whoosh",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "meme_scary_music"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/black_velvet_bow.png"
+    },
+    {
+      "id": "fragile_caution_tape",
+      "name": "Fragile Handle-with-Care Tape",
+      "category": "sticker",
+      "subcategory": "adhesive",
+      "theme": "industrial",
+      "description": "Diagonal high-visibility industrial warning tape stamped across the protective casing warning users not to corrupt the file.",
+      "materials": ["matte_vinyl", "acrylic_adhesive"],
+      "palette": {
+        "primary": "#FFCC00",
+        "secondary": "#000000",
+        "accent": "#FF3300",
+        "finish": "matte"
+      },
+      "dimensions": {
+        "width_px": 80,
+        "height_px": 28,
+        "aspect_ratio": "1:0.35"
+      },
+      "anchor": {
+        "type": "corner_wrap",
+        "offset_x": -10,
+        "offset_y": 20,
+        "hole_required": false
+      },
+      "physics": {
+        "weight_g": 0.5,
+        "damping": 1.0,
+        "stiffness": 1.0,
+        "gravity_scale": 0.0,
+        "max_swing_deg": 0.0
+      },
+      "compatible_targets": ["all"],
+      "rarity": "common",
+      "sound_mappings": {
+        "on_attach": "sfx_tape_peel",
+        "on_detach": "sfx_tape_peel",
+        "on_drag_move": "sfx_swift_whoosh",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "meme_oh_hell_na"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/fragile_caution_tape.png"
+    },
+    {
+      "id": "top_secret_stamp",
+      "name": "Classified TOP SECRET Stamp",
+      "category": "sticker",
+      "subcategory": "adhesive",
+      "theme": "clandestine",
+      "description": "An imposing red ink rubber stamp angled across the icon casing marking the document as confidential government business.",
+      "materials": ["pigment_ink_overlay", "distressed_texture"],
+      "palette": {
+        "primary": "#C0392B",
+        "secondary": "#962D22",
+        "accent": "#E74C3C",
+        "finish": "matte"
+      },
+      "dimensions": {
+        "width_px": 74,
+        "height_px": 32,
+        "aspect_ratio": "1:0.43"
+      },
+      "anchor": {
+        "type": "center_pin",
+        "offset_x": 0,
+        "offset_y": 0,
+        "hole_required": false
+      },
+      "physics": {
+        "weight_g": 0.0,
+        "damping": 1.0,
+        "stiffness": 1.0,
+        "gravity_scale": 0.0,
+        "max_swing_deg": 0.0
+      },
+      "compatible_targets": ["file", "document", "folder", "archive"],
+      "rarity": "uncommon",
+      "sound_mappings": {
+        "on_attach": "sfx_stamp_thump",
+        "on_detach": "sfx_tape_peel",
+        "on_drag_move": "sfx_swift_whoosh",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "meme_spongebob_later"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/top_secret_stamp.png"
+    },
+    {
+      "id": "verified_blue_badge",
+      "name": "Verified Checkmark Metal Pin",
+      "category": "pin",
+      "subcategory": "metal_link",
+      "theme": "social_satire",
+      "description": "An authentic social media blue checkmark enamel badge pinned firmly to the icon casing. Costs $8 virtual dollars a month.",
+      "materials": ["die_cast_zinc", "glossy_cloisonne_enamel", "butterfly_clutch"],
+      "palette": {
+        "primary": "#1DA1F2",
+        "secondary": "#FFFFFF",
+        "accent": "#0D8BD9",
+        "finish": "glossy"
+      },
+      "dimensions": {
+        "width_px": 28,
+        "height_px": 28,
+        "aspect_ratio": "1:1"
+      },
+      "anchor": {
+        "type": "top_right_hook",
+        "offset_x": 2,
+        "offset_y": 2,
+        "hole_required": false
+      },
+      "physics": {
+        "weight_g": 8.0,
+        "damping": 0.96,
+        "stiffness": 0.90,
+        "gravity_scale": 0.2,
+        "max_swing_deg": 5.0
+      },
+      "compatible_targets": ["all"],
+      "rarity": "rare",
+      "sound_mappings": {
+        "on_attach": "sfx_clasp_lock",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_swift_whoosh",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "meme_faaah"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/verified_blue_badge.png"
+    },
+    {
+      "id": "cat_laugh_meme_sticker",
+      "name": "Crying Laughing Cat Sticker",
+      "category": "sticker",
+      "subcategory": "adhesive",
+      "theme": "meme",
+      "description": "The notorious hysterically wheezing cat meme face sticker pasted directly onto the desktop icon.",
+      "materials": ["vinyl_die_cut", "uv_gloss_coating"],
+      "palette": {
+        "primary": "#FFA500",
+        "secondary": "#FFFFFF",
+        "accent": "#FF4500",
+        "finish": "glossy"
+      },
+      "dimensions": {
+        "width_px": 42,
+        "height_px": 42,
+        "aspect_ratio": "1:1"
+      },
+      "anchor": {
+        "type": "corner_grommet",
+        "offset_x": 4,
+        "offset_y": 4,
+        "hole_required": false
+      },
+      "physics": {
+        "weight_g": 0.2,
+        "damping": 1.0,
+        "stiffness": 1.0,
+        "gravity_scale": 0.0,
+        "max_swing_deg": 0.0
+      },
+      "compatible_targets": ["all"],
+      "rarity": "common",
+      "sound_mappings": {
+        "on_attach": "meme_cat_laughing",
+        "on_detach": "sfx_tape_peel",
+        "on_drag_move": "sfx_swift_whoosh",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "meme_cat_laughing"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/cat_laugh_meme_sticker.png"
+    },
+    {
+      "id": "helicopter_beanie_spinner",
+      "name": "Motorized Propeller Beanie",
+      "category": "hat",
+      "subcategory": "headwear",
+      "theme": "meme",
+      "description": "A multicolored rainbow beanie equipped with a spinning dual-blade propeller on top that twirls faster the quicker you drag your icon across the desktop.",
+      "materials": ["cotton_panels", "plastic_propeller", "micro_bearing"],
+      "palette": {
+        "primary": "#FF3B30",
+        "secondary": "#007AFF",
+        "accent": "#FFCC00",
+        "finish": "matte"
+      },
+      "dimensions": {
+        "width_px": 64,
+        "height_px": 50,
+        "aspect_ratio": "1:0.78"
+      },
+      "anchor": {
+        "type": "head_perch",
+        "offset_x": 0,
+        "offset_y": -25,
+        "hole_required": false
+      },
+      "physics": {
+        "weight_g": 11.0,
+        "damping": 0.85,
+        "stiffness": 0.60,
+        "gravity_scale": 0.7,
+        "max_swing_deg": 20.0
+      },
+      "compatible_targets": ["all"],
+      "rarity": "legendary",
+      "sound_mappings": {
+        "on_attach": "sfx_helicopter_spin",
+        "on_detach": "sfx_clasp_unhook",
+        "on_drag_move": "sfx_helicopter_spin",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_helicopter_spin"
+      },
+      "asset_status": "planned",
+      "asset_path": "assets/helicopter_beanie_spinner.png"
+    },
+    {
+      "id": "gentleman_mustache",
+      "name": "Gentleman's Handlebar Mustache",
+      "category": "pin",
+      "subcategory": "center_mount",
+      "theme": "vintage_gentleman",
+      "description": "A dapper glossy jet-black 3D handlebar mustache with curled tips, mounted directly on top of the transparent protective layer covering the file icon.",
+      "materials": ["glossy_resin", "enamel_coat"],
+      "palette": {
+        "primary": "#111111",
+        "secondary": "#222222",
+        "accent": "#FFFFFF",
+        "finish": "glossy"
+      },
+      "dimensions": {
+        "width_px": 64,
+        "height_px": 24,
+        "aspect_ratio": "1:0.38"
+      },
+      "anchor": {
+        "type": "center_pin",
+        "offset_x": 0,
+        "offset_y": 14,
+        "hole_required": false
+      },
+      "physics": {
+        "weight_g": 6.0,
+        "damping": 0.95,
+        "stiffness": 0.90,
+        "gravity_scale": 0.2,
+        "max_swing_deg": 4.0
+      },
+      "compatible_targets": ["all", "file", "folder", "document"],
+      "rarity": "rare",
+      "sound_mappings": {
+        "on_attach": "sfx_clasp_lock",
+        "on_detach": "sfx_tape_peel",
+        "on_drag_move": "sfx_swift_whoosh",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "meme_omg"
+      },
+      "asset_status": "ready",
+      "asset_path": "assets/desktop_file_mustache.jpg"
+    },
+    {
+      "id": "cool_black_sunglasses",
+      "name": "Classic Wayfarer Black Sunglasses",
+      "category": "pin",
+      "subcategory": "center_mount",
+      "theme": "cool_swagger",
+      "description": "Classic glossy jet-black Wayfarer-style sunglasses with dark tinted reflective lenses, mounted horizontally across the upper face of the transparent-covered desktop file.",
+      "materials": ["acetate_frame", "polarized_polycarbonate_lenses"],
+      "palette": {
+        "primary": "#111111",
+        "secondary": "#2C3E50",
+        "accent": "#C0C0C0",
+        "finish": "glossy"
+      },
+      "dimensions": {
+        "width_px": 72,
+        "height_px": 26,
+        "aspect_ratio": "1:0.36"
+      },
+      "anchor": {
+        "type": "center_pin",
+        "offset_x": 0,
+        "offset_y": -8,
+        "hole_required": false
+      },
+      "physics": {
+        "weight_g": 7.0,
+        "damping": 0.95,
+        "stiffness": 0.90,
+        "gravity_scale": 0.2,
+        "max_swing_deg": 4.0
+      },
+      "compatible_targets": ["all", "file", "document", "pdf", "image"],
+      "rarity": "uncommon",
+      "sound_mappings": {
+        "on_attach": "sfx_clasp_lock",
+        "on_detach": "sfx_tape_peel",
+        "on_drag_move": "sfx_swift_whoosh",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "meme_omg"
+      },
+      "asset_status": "ready",
+      "asset_path": "assets/desktop_file_sunglasses.jpg"
+    },
+    {
+      "id": "cozy_red_knitted_scarf",
+      "name": "Cozy Knitted Crimson Winter Scarf",
+      "category": "sticker",
+      "subcategory": "wrap_around",
+      "theme": "cozy_winter",
+      "description": "A warm, chunky rib-knit wool winter scarf in festive crimson red, wrapped snugly around the body of the transparent-covered desktop file with fringed tails draping down the side.",
+      "materials": ["chunky_merino_wool", "acrylic_yarn"],
+      "palette": {
+        "primary": "#C0392B",
+        "secondary": "#962D22",
+        "accent": "#E74C3C",
+        "finish": "matte"
+      },
+      "dimensions": {
+        "width_px": 82,
+        "height_px": 48,
+        "aspect_ratio": "1:0.58"
+      },
+      "anchor": {
+        "type": "corner_wrap",
+        "offset_x": 4,
+        "offset_y": 18,
+        "hole_required": false
+      },
+      "physics": {
+        "weight_g": 12.0,
+        "damping": 0.96,
+        "stiffness": 0.75,
+        "gravity_scale": 0.5,
+        "max_swing_deg": 10.0
+      },
+      "compatible_targets": ["all", "file", "folder", "document", "recycle_bin"],
+      "rarity": "uncommon",
+      "sound_mappings": {
+        "on_attach": "sfx_aww_reaction",
+        "on_detach": "sfx_tape_peel",
+        "on_drag_move": "sfx_swift_whoosh",
+        "on_drag_release": "sfx_icon_drop_thud",
+        "on_interact": "sfx_aww_reaction"
+      },
+      "asset_status": "ready",
+      "asset_path": "assets/desktop_file_red_scarf.jpg"
+    }
+  ]
+}
